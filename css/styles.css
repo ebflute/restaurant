@@ -1,0 +1,121 @@
+
+
+body {
+	font: 16px 'Open Sans', sans-serif;
+	line-height:24px;
+}
+
+/* colors */
+
+.lime {background-color:#D5FCC7}
+.med-green {background-color:#AFD6C7}
+.soft-green {background-color:#6CA67F}
+.soft-gray {background-color:#666452}
+.maroon {background-color:#9E3A52}
+.peach {background-color:#C96260}
+.lavendar {background-color:#CBCBF2;}
+.pink {background-color:#F5BFC5;}
+.pale-orange {background-color:#FAD7AF;}
+
+.txt-lime {color:#D5FCC7}
+.txt-med-green {color:#AFD6C7}
+.txt-soft-green {color:#6CA67F}
+.txt-soft-gray {color:#666452}
+.txt-maroon {color:#9E3A52}
+.txt-peach {color:#C96260}
+.txt-white {color:#fff;}
+
+.navbar-brand {
+	font-size:3em;
+	font-family: 'Amatic SC', cursive;
+	font-weight:bold;
+
+}
+
+.nav-container-top {background-color:#fff;}
+
+/* rollover and active color */
+.navbar-default .navbar-nav>.active>a {
+    color: #fff;
+    background-color: #C96260;
+}
+.navbar-default .navbar-nav>.active>a:focus {
+    color: #fff;
+    background-color: #333;
+}
+
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #333;
+}
+.navbar-default,.navbar-default .navbar-collapse, .navbar-default .navbar-form {border:#fff;}
+
+.nav>li a{ 
+	text-align:center;
+	font-size:2em;
+	font-family: 'Amatic SC', cursive;
+	font-weight:bold; }
+
+.navbar-default .navbar-nav>li:nth-child(2)>a:hover, .navbar-default .navbar-nav>li:nth-child(2)>a:focus{
+	 color: #fff;
+    background-color: #9E3A52;
+}
+.navbar-default .navbar-nav>li:nth-child(3)>a:hover, .navbar-default .navbar-nav>li:nth-child(3)>a:focus{
+	 color: #fff;
+    background-color: #6CA67F;
+}
+
+.navbar-brand .fa-cutlery{ color: #ffcf40; font-size: .8em; padding-right:10px;}
+
+.section {
+    position: relative;
+    padding: 0 30px;
+    overflow: hidden;
+}
+
+
+.menu-img {width:100%;}
+
+
+
+h1, h2, h3 {
+
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 2px;
+}
+
+
+h1 {
+
+	font-size:3em;
+	margin:20px 0 20px 0;
+
+}
+
+
+
+a {
+	color:#9E3A52;
+	text-decoration:none;
+}
+
+a:hover, a:active, a:visited {
+	
+	/*color:#6CA67F;*/
+
+}
+
+p.copyright { padding: 50px; margin-top: 40px; }
+
+
+
+@media screen and (min-width: 721px) and (max-width:1200px){
+
+	/*.navbar-nav {display:none;}*/
+
+}
+
+@media (min-width: 768px)
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 15px;
+}
