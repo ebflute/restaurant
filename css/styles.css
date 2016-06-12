@@ -38,6 +38,10 @@ a {
 
 /* navigation */
 
+.navbar {
+
+	background-color:#fff;
+}
 
 .navbar-header {
 	background-color:#fff;
