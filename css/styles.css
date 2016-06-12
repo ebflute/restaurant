@@ -5,6 +5,24 @@ body {
 	line-height:24px;
 }
 
+h1, h2, h3 {
+
+	font-family: 'Amatic SC', cursive;
+	letter-spacing: 2px;
+}
+
+
+h3 {
+	font-size:2em;
+	padding:6px 0 15px;
+	font-weight: bold;
+}
+
+a {
+	color:#9E3A52;
+	text-decoration:none;
+}
+
 /* colors */
 
 .soft-green {background-color:#6CA67F}
@@ -20,14 +38,33 @@ body {
 
 /* navigation */
 
-.navbar-brand {
-	font-size:3em;
-	font-family: 'Amatic SC', cursive;
-	font-weight:bold;
+
+.navbar-header {
+	background-color:#fff;
+	position:relative;
+	height:90px;
 
 }
 
-.nav-container-top {background-color:#fff;}
+.navbar-brand  h1 {
+	font-size:3em;
+	font-family: 'Amatic SC', cursive;
+	font-weight:bold;
+	margin:0;
+
+}
+
+.navbar-brand  h1:hover, .navbar-brand h1:focus {
+	text-decoration:none;
+}
+
+#header-nav {
+
+	background-color:#fff;
+	border-radius: 0;
+	border:0;
+
+}
 
 /* rollover and active color */
 .navbar-default .navbar-nav>.active>a {
@@ -47,17 +84,17 @@ body {
 	border:#fff;
 }
 
-.nav>li a{ 
+#navbar a{ 
 	text-align:center;
 	font-size:2em;
 	font-family: 'Amatic SC', cursive;
 	font-weight:bold; }
 
-.navbar-default .navbar-nav>li:nth-child(2)>a:hover, .navbar-default .navbar-nav>li:nth-child(2)>a:focus{
+#navbar li:nth-child(2)>a:hover,  #navbar li:nth-child(2)>a:focus{
 	 color: #fff;
     background-color: #9E3A52;
 }
-.navbar-default .navbar-nav>li:nth-child(3)>a:hover, .navbar-default .navbar-nav>li:nth-child(3)>a:focus{
+#navbar li:nth-child(3)>a:hover, #navbar >li:nth-child(3)>a:focus{
 	color: #fff;
     background-color: #6CA67F;
 }
@@ -66,6 +103,25 @@ body {
 	color: #ffcf40; 
 	font-size: .8em; 
 	padding-right:10px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-toggle .icon-bar {
+	
+	border:1px solid #9E3A52;
+}
+
+.navbar-header button.navar-toggle {
+
+	clear:both;
+
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+
+	background-color:#FAD7AF;
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	background:#fff;
 }
 
 /* section styles */
@@ -99,31 +155,7 @@ body {
 	margin-bottom:50px;
 }
 
-h1, h2, h3 {
 
-	font-family: 'Amatic SC', cursive;
-	letter-spacing: 2px;
-}
-
-
-h1 {
-
-	font-size:3em;
-	margin:20px 0 20px 0;
-
-}
-
-
-h3 {
-	font-size:2em;
-	padding:6px 0 15px;
-	font-weight: bold;
-}
-
-a {
-	color:#9E3A52;
-	text-decoration:none;
-}
 /* media query for larger screens */
 
 @media screen and (min-width: 768px){
@@ -133,4 +165,9 @@ a {
     	padding-left:60px;
     	padding-right:60px;
     }
+    .navbar-default {
+  background-color: #fff;
+  border-top:1px solid #999;
+
+}
 }
