@@ -72,11 +72,20 @@ body {
     padding: 0 30px;
     overflow: hidden;
 }
+.foot-section {
+	position: relative;
+    padding: 30px;
+    overflow: hidden;
 
+}
 
 .menu-img {width:100%;}
 
+.intro {padding:10px 30px;}
 
+.pos-contain {position:relative;padding:20px;}
+
+.lifting {margin-bottom:50px;}
 
 h1, h2, h3 {
 
@@ -105,9 +114,6 @@ a:hover, a:active, a:visited {
 
 }
 
-p.copyright { padding: 50px; margin-top: 40px; }
-
-
 
 @media screen and (min-width: 721px) and (max-width:1200px){
 
@@ -118,4 +124,5 @@ p.copyright { padding: 50px; margin-top: 40px; }
 @media (min-width: 768px)
 .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
     margin-left: 15px;
+    .row {padding-left:60px;padding-right:60px;}
 }
