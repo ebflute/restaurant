@@ -2,16 +2,28 @@ html,  body {
 	overflow-y: auto;
     height:100%;
 }
+* {box-sizing: border-box;}
 a {color: #1A88C5;text-decoration:none;}
-
 
 a img {
 	border: none;
     color:inherit;
 }
 body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form,  fieldset,  legend,  input,  textarea,  th,  td {
-	margin: 0;
+	margin:0;
 	padding: 0;
+    font:24px 'Abel',arial, helvetica, Sans-Serif;
+   
+} body {margin: 0 auto;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    background: #f5f5f5;
+    height:100%;
+    position:relative;
+    line-height: 1.2em;
+    font-size: 18px;          
+    color: #4b4b4b;
+    box-sizing: border-box;
 }
 h2{  font-size: 2.2em;
     line-height: 1em;
@@ -33,27 +45,8 @@ input,  textarea,  select {
 	font-size: 100%;
 }
 
-
- body {
-            font-family: 'Abel', Arial, Helvetica, Sans-Serif;
-            margin: 0 auto;
-            border-left: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-            background: #f5f5f5;
-            height:100%;
-            position:relative;
-            line-height: 1.2em;
-            font-size: 18px;
-            color: #4b4b4b;
-            box-sizing: border-box;
-        }
-
-        h1,  h2,  h3,  h4,  h5,  h6 {
-
-            font-family: 'Abel', Arial, Helvetica, Sans-Serif;
-        }
-       .intro-container{width:70%;text-align:center;margin:0 auto;}
-       p.media-download {
+.intro-container{width:70%;text-align:center;margin:0 auto;}
+p.media-download {
             font-family: 'Abel',Arial, Helvetica, Sans-Serif;
             font-weight: 300;
             font-size: 21px;
@@ -570,17 +563,16 @@ input,  textarea,  select {
 .centerTitle  { text-align: center; }
 @media all and (min-width: 860px) and (max-width: 960px) 
 {
-    .home-blocks .comp-block .text p, .comp-block .swipe-wrap{font-size:20px;}
+    
 }
 
 @media all and (min-width: 770px) and (max-width: 860px) 
 {
-    .home-blocks .comp-block .text p, .comp-block .swipe-wrap{font-size:16px;}
+    
 }
 
   
 .container { width: 1140px; margin: 0 auto; background:#fff; border-left:1px solid #ccc;border-right:1px solid #ccc;position:relative;  }
-
 .inner {margin:40px }
 .home-blocks{width:1150px; margin:0 auto;}
 #logo-home {
