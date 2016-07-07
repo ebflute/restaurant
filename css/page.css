@@ -126,7 +126,7 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
 }
 
 h2{ font-size: 2.2em;
-    line-height: 1.8em;
+    line-height: 1em;
     font-weight: 300;
     border-bottom: 1px solid #f89a0f;
     padding-bottom: 7px;
@@ -188,7 +188,7 @@ h4 {
 list-style-type: none; 
 margin:0;
 padding:0 0 0 30px; 
-background: url('/images/arrow-right-orange.png') no-repeat left center; 
+background: url('http://ebflute.github.io/restaurant//images/arrow-right-orange.png') no-repeat left center; 
 }
 
         
@@ -372,7 +372,7 @@ background: url('/images/arrow-right-orange.png') no-repeat left center;
     #home-slider{width:100%; position:absolute; z-index:40; top:0; left:0;}
     #home-slider .swipe-wrap{height:auto;}    
   
-    #home-banner, #home-slider{height:445px;}
+    #home-banner, #home-slider{height:425px;}
     #home-slider .slide{height:397px;}
     #home-slider .slide .lead-text { top: 40%; width: 430px; right: 20px;}
   
@@ -447,7 +447,7 @@ background: url('/images/arrow-right-orange.png') no-repeat left center;
 }
 
 @media all and (max-width: 560px) {
-  body{font-size:14px;}
+  body{font-size:18px;}
   .title-Text {font-size:26px;  line-height:30px;}
   .title-Text2 {font-size:20px;  line-height:26px;}
   .sub-Title {font-size: 15px; line-height:18px;}
@@ -483,7 +483,7 @@ background: url('/images/arrow-right-orange.png') no-repeat left center;
   footer .footer .linkedin-icon {background-image: url(https://wageworks.com/images/icon_linkedin.png);}
   footer .footer .rss-icon {background-image: url(https://wageworks.com/images/icon_rss.png);}
   
-  #home-banner, #home-slider{height:620px;}
+  #home-banner, #home-slider{height:360px;}
   #home-slider .slide{height:370px; background-position:top center;}
   .home-slider-logo{width:240px; right:20px; background:url(https://wageworks.com/css/images/yay_mobile.png) no-repeat top center; height:69px; }
   .home-slider-buttons{width:100%; right:0; top:425px;}
