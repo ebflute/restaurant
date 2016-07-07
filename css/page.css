@@ -46,10 +46,13 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
 .inner {margin:40px ; }
 .home-blocks{width:1150px; margin:0 auto;}
 #logo-home {
+  position:relative;
     height: 70px;
     width: 250px;
     padding:0px 0px 15px 40px;
+    margin: 10px 0 20px 0;
     display:block;
+    clear:both;
 }
 
 
@@ -426,9 +429,8 @@ background: url('http://ebflute.github.io/restaurant//images/arrow-right-orange.
 }
 
 @media all and (max-width: 770px) and (min-width:560px){
-  .title-Text {font-size: 32px;  line-height:36px;}
-  .sub-Title {font-size: 16px; line-height: 20px;}
   
+  .intro-text {font-size:18px;}
   .visible-tablet { display: inherit !important; }
   .hidden-tablet { display: none !important; }
   
