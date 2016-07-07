@@ -1,0 +1,1202 @@
+*
+{
+	box-sizing:border-box;
+}
+
+html,body
+{
+	height:100%;
+	overflow-y:auto;
+}
+
+body
+{
+	background:#f5f5f5;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	color:#4b4b4b;
+	font-family:Abel, Arial, Helvetica, Sans-Serif;
+	font-size:18px;
+	height:100%;
+	line-height:1.2em;
+	margin:0 auto;
+	position:relative;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family:Abel, Arial, Helvetica, Sans-Serif;
+}
+
+a
+{
+	color:#1A88C5;
+	text-decoration:none;
+}
+
+a:active,a:hover
+{
+	ctext-decoration:underline;
+}
+
+a img
+{
+	border:none;
+	color:inherit;
+}
+
+body,div,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,th,td
+{
+	margin:0;
+	padding:0;
+}
+
+.intro-container
+{
+	margin:0 auto;
+	text-align:center;
+	width:70%;
+}
+
+#container
+{
+	background:#fff;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+	margin:0 auto;
+	position:relative;
+	width:1140px;
+}
+
+.inner
+{
+	margin:40px;
+}
+
+.home-blocks
+{
+	margin:0 auto;
+	width:1150px;
+}
+
+#logo-home
+{
+	display:block;
+	height:70px;
+	padding:0 0 15px 40px;
+	width:250px;
+}
+
+.responstable
+{
+	background:#FFF;
+	border:1px solid #167F92;
+	border-radius:10px;
+	color:#024457;
+	font-family:arial, helvetica, Sans-Serif;
+	margin:2em 0;
+	overflow:hidden;
+	width:100%;
+}
+
+.responstable tr
+{
+	border:1px solid #D9E4E6;
+}
+
+.responstable tr:nth-child(odd)
+{
+	background-color:#EAF3F3;
+}
+
+.responstable th
+{
+	background-color:#167F92;
+	border:1px solid #FFF;
+	color:#FFF;
+	display:none;
+	padding:1em;
+}
+
+.responstable th:first-child
+{
+	display:table-cell;
+}
+
+.responstable th:nth-child(2)
+{
+	display:table-cell;
+}
+
+.responstable th:nth-child(2) span
+{
+	display:none;
+}
+
+.responstable th:nth-child(2):after
+{
+	content:attr(data-th);
+}
+
+.responstable td
+{
+	display:block;
+	max-width:7em;
+	vertical-align:top;
+	word-wrap:break-word;
+}
+
+.responstable td:first-child
+{
+	border-right:1px solid #D9E4E6;
+	display:table-cell;
+	text-align:left;
+}
+
+.responstable th,.responstable td
+{
+	margin:.5em 1em;
+	text-align:left;
+}
+
+h2
+{
+	border-bottom:1px solid #f89a0f;
+	font-size:2.2em;
+	font-weight:300;
+	line-height:1em;
+	margin-bottom:20px;
+	padding-bottom:7px;
+	text-align:center;
+}
+
+h3
+{
+	font-size:1.8em;
+}
+
+h4
+{
+	font-size:1.2em;
+}
+
+#home-banner
+{
+	height:470px;
+	position:relative;
+}
+
+#home-slider
+{
+	height:470px;
+	left:0;
+	position:relative;
+	top:0;
+	width:100%;
+	z-index:40;
+}
+
+#home-slider .swipe-wrap
+{
+	height:480px;
+}
+
+#home-slider .slide
+{
+	background:#ddd;
+	background-position:top left;
+	background-size:cover;
+	height:480px;
+	width:100%;
+}
+
+#home-slider .slide .lead-text
+{
+	font-weight:200;
+	letter-spacing:1px;
+	position:absolute;
+	right:0;
+	text-align:center;
+	top:35%;
+	width:530px;
+}
+
+#home-slider .slide .lead-text h1
+{
+	color:#5c6d5a;
+	font-size:30px;
+	font-weight:100;
+	line-height:30px;
+	padding-bottom:15px;
+}
+
+#home-slider .slide .lead-text h1 span.norm
+{
+	display:block;
+	font-size:65px;
+	font-weight:300;
+	line-height:60px;
+}
+
+#home-slider .slide .lead-text h2
+{
+	border:none;
+	color:#5c6d5a;
+	display:inline-block;
+	font-size:30px;
+	font-weight:100;
+	line-height:32px;
+	padding:0 15px;
+	position:relative;
+}
+
+#home-slider .slide .lead-text .brak-1
+{
+	background:url(https://wageworks.com/css/images/leadbracket-right.png) no-repeat bottom right;
+	display:inline-block;
+	height:82px;
+}
+
+#home-slider .slide .lead-text .brak-2
+{
+	background:url(https://wageworks.com/css/images/leadbracket-left.png) no-repeat bottom left;
+	display:inline-block;
+	height:72px;
+	padding:5px 20px;
+}
+
+.home-slider-logo
+{
+	background:url(https://wageworks.com/css/images/yay_guy_new.png) no-repeat top center;
+	height:115px;
+	position:absolute;
+	right:166px;
+	top:40px;
+	width:200px;
+	z-index:50;
+}
+
+.swipe
+{
+	-webkit-transform:translate3d(0,0,0);
+	overflow:hidden;
+	position:relative;
+	transform:translate3d(0,0,0);
+	visibility:hidden;
+}
+
+.swipe-wrap
+{
+	overflow:hidden;
+	position:relative;
+}
+
+.swipe-wrap > div
+{
+	float:left;
+	position:relative;
+	width:100%;
+}
+
+.brak-font1,.brak-font2
+{
+	color:#F1801F;
+	font-family:'Open Sans', Raleway, Abel, DinNextCondensed;
+	font-size:100px;
+	font-weight:100;
+	position:absolute;
+	top:18px;
+}
+
+.brak-font1
+{
+	left:-35px;
+}
+
+.brak-font2
+{
+	right:-35px;
+}
+
+.title-Text2,.title-Text2 a
+{
+	color:#1A88C5;
+	font-family:Abel, DinNext, Arial, Helvetica, Sans-Serif;
+	font-size:24px;
+	font-weight:300;
+	line-height:26px;
+	padding-bottom:10px;
+}
+
+#assets ul
+{
+	margin:0 0 0 20px;
+	padding:0;
+}
+
+#assets ul li
+{
+	background:url(images/arrow-right-orange.png) no-repeat left top;
+	list-style:none;
+	margin:0;
+	padding:0 0 0 30px;
+}
+
+#footer
+{
+	height:187px;
+	width:100%;
+}
+
+#footer .alignleft
+{
+	float:left;
+	padding-left:50px;
+}
+
+#footer .alignright
+{
+	float:right;
+	padding-right:50px;
+}
+
+#footer .aligncenter
+{
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+#footer .clear
+{
+	clear:both;
+}
+
+#footer li
+{
+	display:inline;
+	line-height:20px;
+	list-style-type:none;
+}
+
+#footer #social
+{
+	background:#eee url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{951e616d-4dcb-4de1-b0e9-e4cd9b853e5c}_nav_footer_bg.png) repeat left top;
+	border-top:1px solid #ccc;
+	font-family:Abel;
+	font-weight:400;
+	padding:20px 0;
+}
+
+#footer #social .social-link
+{
+	padding-left:0;
+}
+
+#footer #social li
+{
+	padding-right:60px;
+}
+
+#footer #social li:last-child
+{
+	padding-right:0;
+}
+
+#footer #social li a
+{
+	color:#4b4b4b;
+	font-size:13px;
+	font-weight:300;
+	line-height:17px;
+	text-decoration:none;
+}
+
+#footer #social a:hover,#footer #social a:active
+{
+	color:#077ec0;
+	text-decoration:none;
+}
+
+#footer #social .social-icon
+{
+	display:inline-block;
+	height:17px;
+	left:0;
+	padding-right:0;
+	position:relative;
+	top:4px;
+	width:17px;
+}
+
+#footer #social .facebook-icon
+{
+	background:url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{d385e564-abb9-40eb-aa22-1512b5bb740d}_footer_facebook.png) no-repeat left top;
+}
+
+#footer #social .twitter-icon
+{
+	background:url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{c5fa3193-b19e-4ab1-800d-4f6abd974e7c}_footer_twitter.png) no-repeat left top;
+}
+
+#footer #social .linkedin-icon
+{
+	background:url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{8ca1106c-1ba2-4f01-b15b-bf3e3c269723}_footer_linkedin.png) no-repeat left top;
+}
+
+#footer #copyright
+{
+	background:#ddd url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{f2b90e20-4e7c-4e3b-b5ce-03227603edec}_footer_bottom_bg.gif) repeat left top;
+	border-top:1px solid #ccc;
+	font-size:13px;
+	overflow:hidden;
+	padding:20px 0;
+}
+
+#footer #copyright ul
+{
+	padding-left:0;
+}
+
+#footer #copyright li
+{
+	border-left:1px solid #666;
+	padding:0 10px;
+}
+
+#footer #copyright li:first-child
+{
+	border-left:none;
+	padding-left:0;
+}
+
+#footer #copyright li:last-child
+{
+	padding-right:0;
+}
+
+#footer #copyright li a,#footer #copyright li
+{
+	color:#333;
+	font-family:Helvetica, Arial, Sans-Serif;
+	font-size:12px;
+	font-weight:500;
+	line-height:17px;
+	text-decoration:none;
+	text-transform:none;
+}
+
+#footer #copyright a:hover,#footer #copyright a:active
+{
+	color:#077ec0;
+	text-decoration:none;
+}
+
+@media min-width 480px {
+	.responstable th:nth-child(2) span
+	{
+		display:block;
+	}
+	
+	.responstable th:nth-child(2):after
+	{
+		display:none;
+	}
+	
+	.responstable td
+	{
+		border:1px solid #D9E4E6;
+	}
+	
+	.responstable th,.responstable td
+	{
+		display:table-cell;
+		padding:1em;
+	}
+}
+
+@media all and min-width1280px {
+	#container
+	{
+		background:#fff;
+		border-left:1px solid #d1cdcc;
+		border-right:1px solid #d1cdcc;
+		margin:0 auto;
+		position:relative;
+		width:1280px;
+	}
+}
+
+@media all and max-width1280px {
+	#container
+	{
+		background:#fff;
+		border-left:0 none;
+		border-right:0 none;
+		width:100%;
+	}
+}
+
+@media all and max-width1024px {
+	.b-bracket
+	{
+		display:none;
+	}
+}
+
+@media all and max-width 960px {
+	.sub-width
+	{
+		margin:0 1%;
+		width:98%;
+	}
+	
+	#viewport
+	{
+		background:#fff;
+		position:relative;
+		z-index:40;
+	}
+	
+	#viewport.menuright
+	{
+		-moz-transform:translateX(-240px);
+		-ms-transform:translateX(-240px);
+		-o-transform:translateX(-240px);
+		-webkit-transform:translateX(-240px);
+		border-left:1px solid #d1cdcc;
+		transform:translateX(-240px);
+	}
+	
+	#viewport.menuleft
+	{
+		-moz-transform:translateX(240px);
+		-ms-transform:translateX(240px);
+		-o-transform:translateX(240px);
+		-webkit-transform:translateX(240px);
+		border-right:1px solid #d1cdcc;
+		transform:translateX(240px);
+	}
+	
+	header
+	{
+		height:65px;
+	}
+	
+	header .head-logo
+	{
+		left:0;
+		top:14px;
+	}
+	
+	header .head-logo a
+	{
+		height:41px;
+		margin:0 auto;
+		width:181px;
+	}
+	
+	header .head-logo.defaultLogo a
+	{
+		background:url(/css/images/ww-logo-small-phone.png) no-repeat top left;
+		background-size:79%;
+		height:41px;
+		width:305px;
+	}
+	
+	header .head-logo .mini-head-container
+	{
+		margin:0 auto;
+		width:330px;
+	}
+	
+	header .head-logo .mini-head-container a.main-logo
+	{
+		float:left;
+		margin:0;
+	}
+	
+	header .head-logo .mini-head-container a.mini-logo
+	{
+		float:right;
+		height:60px;
+		left:0;
+		margin:0;
+		position:relative;
+		top:-10px;
+		width:140px;
+	}
+	
+	#home-slider
+	{
+		left:0;
+		position:absolute;
+		top:0;
+		width:100%;
+		z-index:40;
+	}
+	
+	#home-slider .swipe-wrap
+	{
+		height:auto;
+	}
+	
+	#home-banner,#home-slider
+	{
+		height:445px;
+	}
+	
+	#home-slider .slide
+	{
+		height:397px;
+	}
+	
+	#home-slider .slide .lead-text
+	{
+		right:20px;
+		top:40%;
+		width:430px;
+	}
+	
+	#home-slider .slide .lead-text h1
+	{
+		font-size:20px;
+		line-height:20px;
+		padding-bottom:10px;
+	}
+	
+	#home-slider .slide .lead-text h1 span.norm
+	{
+		font-size:40px;
+		line-height:40px;
+	}
+	
+	#home-slider .slide .lead-text h2
+	{
+		font-size:25px;
+		line-height:30px;
+	}
+	
+	.home-slider-buttons
+	{
+		right:45px;
+		text-align:center;
+		top:320px;
+	}
+	
+	.home-slider-buttons a
+	{
+		display:inline-block;
+		float:none;
+		line-height:20px;
+		padding-top:8px;
+		width:115px;
+	}
+	
+	.home-slider-buttons a:last-child
+	{
+		margin-right:0;
+	}
+	
+	.home-slider-logo
+	{
+		background:url(/css/images/yay_tablet.png) no-repeat top center;
+		height:99px;
+		right:20px;
+		top:70px;
+		width:430px;
+	}
+	
+	footer
+	{
+		position:relative;
+	}
+}
+
+@media all and max-width 770px {
+	.hidden-desktop
+	{
+		display:inherit!important;
+	}
+	
+	.visible-desktop
+	{
+		display:none!important;
+	}
+	
+	footer nav
+	{
+		position:relative;
+	}
+	
+	footer nav .foot-logo
+	{
+		position:absolute;
+		text-align:center;
+		width:100%;
+	}
+	
+	footer nav .fluid ul .fluid.last
+	{
+		padding-bottom:14px;
+	}
+	
+	footer .footer .fluid.foot-logo
+	{
+		padding-top:0;
+	}
+	
+	footer .footer .social-icon
+	{
+		display:block;
+		height:17px;
+		padding-right:4px;
+		width:17px;
+	}
+	
+	footer .footer .fb-icon
+	{
+		background:url(images/footer_FB.png) no-repeat left top;
+	}
+	
+	footer .footer .twitter-icon
+	{
+		background:url(images/footeR_twitter.png) no-repeat left top;
+	}
+	
+	footer .footer .linkedin-icon
+	{
+		background:url(images/footer_linkedin.png) no-repeat left top;
+	}
+	
+	footer .footer .rss-icon
+	{
+		background:url(images/footer_rss.png) no-repeat left top;
+	}
+	
+	footer .copyright
+	{
+		padding:100px 0 10px;
+		text-align:center;
+	}
+	
+	footer .copyright.mini-footer
+	{
+		padding-top:10px;
+	}
+	
+	footer .copyright ul
+	{
+		float:left;
+		width:100%;
+	}
+	
+	footer .copyright li
+	{
+		display:inline-block;
+		margin:5px 0;
+	}
+	
+	footer .copyright li.last
+	{
+		border:0 none;
+	}
+	
+	footer .copyright .right-desktop li
+	{
+		border-left:1px solid #666;
+	}
+	
+	footer .footer
+	{
+		padding:0;
+	}
+	
+	footer nav .fluid
+	{
+		padding-bottom:0;
+	}
+	
+	footer nav .fluid.spanfoot.foot-logo
+	{
+		bottom:-105px;
+		padding-bottom:0;
+		width:100%;
+	}
+	
+	footer nav .foot-logo .first-wrapper
+	{
+		margin:0 auto;
+		width:50%;
+	}
+	
+	footer .copyright .phone-full
+	{
+		clear:both;
+		display:block;
+		padding:0;
+	}
+}
+
+@media all and max-width 770px and min-width560px {
+	.title-Text
+	{
+		font-size:32px;
+		line-height:36px;
+	}
+	
+	.sub-Title
+	{
+		font-size:16px;
+		line-height:20px;
+	}
+	
+	.visible-tablet
+	{
+		display:inherit!important;
+	}
+	
+	.hidden-tablet
+	{
+		display:none!important;
+	}
+	
+	.left-tablet
+	{
+		float:left;
+	}
+	
+	.right-tablet
+	{
+		float:right;
+	}
+	
+	footer nav .fluid.spanfoot
+	{
+		padding:20px 0;
+		width:33%;
+	}
+	
+	footer .copyright .phone-full
+	{
+		clear:none;
+		display:inline-block;
+		float:none;
+		padding:0 0 0 10px;
+	}
+	
+	footer .copyright ul,footer .copyright li
+	{
+		display:inline-block;
+	}
+	
+	footer .copyright ul
+	{
+		float:none;
+	}
+	
+	footer .copyright .left-desktop,footer .copyright .right-desktop
+	{
+		display:inline;
+		text-align:center;
+		width:auto;
+	}
+}
+
+@media all and max-width 560px {
+	body
+	{
+		font-size:14px;
+	}
+	
+	.title-Text
+	{
+		font-size:26px;
+		line-height:30px;
+	}
+	
+	.title-Text2
+	{
+		font-size:20px;
+		line-height:26px;
+	}
+	
+	.sub-Title
+	{
+		font-size:15px;
+		line-height:18px;
+	}
+	
+	.visible-phone
+	{
+		display:inherit!important;
+	}
+	
+	.hidden-phone
+	{
+		display:none!important;
+	}
+	
+	.phone-sized,.phone-full,.component .span2 .fluid.span2,.fluid.span4,.fluid.span4-desk,.fluid.span3,.fluid.span3-2,.fluid.span3-desk,header
+	{
+		height:55px;
+	}
+	
+	header .head-logo
+	{
+		top:12px;
+	}
+	
+	header .head-logo a
+	{
+		background:url(/css/images/logo-phone.png) no-repeat top left;
+		height:35px;
+		width:153px;
+	}
+	
+	header .head-logo.defaultLogo a
+	{
+		background:url(/css/images/ww-logo-small-phone.png) no-repeat top left;
+		background-size:100%;
+		height:41px;
+		width:189px;
+	}
+	
+	header .head-logo .mini-head-container a.main-logo
+	{
+		float:none;
+		margin:0 auto;
+	}
+	
+	header .head-logo .mini-head-container a.main-logo.wmini
+	{
+		background-position:left center;
+		background-size:contain;
+		position:relative;
+		right:30px;
+		width:120px;
+	}
+	
+	header .head-logo .mini-head-container a.mini-logo
+	{
+		background-position:center right;
+		float:right;
+		height:46px;
+		left:auto;
+		margin:0;
+		position:absolute;
+		right:5px;
+		top:-8px;
+		width:30%;
+	}
+	
+	footer nav .footer-logo
+	{
+		background:url(/css/images/logo-footer-phone.png) no-repeat top left;
+		height:72px;
+		margin:0 auto;
+		width:151px;
+	}
+	
+	footer nav .foot-logo .first-wrapper
+	{
+		margin:0 auto;
+		width:70%;
+	}
+	
+	footer nav .spanfoot-ico ul
+	{
+		padding-left:0;
+	}
+	
+	footer nav .fluid.spanfoot
+	{
+		padding:20px 0;
+		width:50%;
+	}
+	
+	footer nav ul .fluid.fluid-ico,footer nav ul .fluid.fluid-ico.last
+	{
+		background:#AAA;
+		float:left;
+		margin:1%;
+		padding-bottom:0;
+		width:23%;
+	}
+	
+	footer nav .social-icon
+	{
+		background-position:center center;
+		width:100%;
+	}
+	
+	footer nav .fluid.spanfoot-ico.spanfoot
+	{
+		padding-top:0;
+		width:100%;
+	}
+	
+	footer .footer .social-icon
+	{
+		background-position:center center;
+		padding:10px 0;
+		position:static;
+		width:100%;
+	}
+	
+	footer .copyright .right-desktop li
+	{
+		border-left:0 none;
+	}
+	
+	footer .footer .fb-icon
+	{
+		background-image:url(images/icon_facebook.png);
+	}
+	
+	footer .footer .twitter-icon,footer .footer .twitter-icon2
+	{
+		background-image:url(images/icon_twitter.png);
+	}
+	
+	footer .footer .linkedin-icon
+	{
+		background-image:url(images/icon_linkedin.png);
+	}
+	
+	footer .footer .rss-icon
+	{
+		background-image:url(images/icon_rss.png);
+	}
+	
+	#home-banner,#home-slider
+	{
+		height:620px;
+	}
+	
+	#home-slider .slide
+	{
+		background-position:top center;
+		height:370px;
+	}
+	
+	.home-slider-logo
+	{
+		background:url(/css/images/yay_mobile.png) no-repeat top center;
+		height:69px;
+		right:20px;
+		width:240px;
+	}
+	
+	.home-slider-buttons
+	{
+		right:0;
+		top:425px;
+		width:100%;
+	}
+	
+	.home-slider-buttons a div
+	{
+		display:none;
+	}
+	
+	.home-slider-buttons a
+	{
+		font-size:18px;
+		line-height:40px;
+		margin:0 0 10px;
+		width:95%;
+	}
+	
+	#home-slider .slide .lead-text
+	{
+		right:20px;
+		text-align:center;
+		width:240px;
+	}
+	
+	#home-slider .slide .lead-text h1
+	{
+		font-size:18px;
+		line-height:22px;
+	}
+	
+	#home-slider .slide .lead-text h1 span.norm
+	{
+		font-size:28px;
+		line-height:30px;
+	}
+	
+	#home-slider .slide .lead-text h2
+	{
+		font-size:15px;
+		line-height:20px;
+	}
+	
+	.brak-font1,.brak-font2
+	{
+		font-size:58px;
+		top:10px;
+	}
+	
+	.brak-font1
+	{
+		left:-15px;
+	}
+	
+	.brak-font2
+	{
+		right:-15px;
+	}
+	
+	.leader-text
+	{
+		clear:both;
+	}
+}
+
+@media -webkit-min-device-pixel-ratio 2 and max-width 960px,min-resolution 192dpi and max-width 960px {
+	header .head-logo a
+	{
+		background-image:url(http://wageworks.com/css/images/logo_tablet_2x.png);
+		background-size:181px 41px;
+	}
+	
+	footer nav .footer-logo
+	{
+		background-image:url(http://wageworks.com/css/images/logo_footer_tablet2x.png);
+		background-size:151px 71px;
+	}
+}
+
+@media -webkit-min-device-pixel-ratio 2 and max-width 480px,min-resolution 192dpi and max-width 480px {
+	header .head-logo a
+	{
+		background:url(http://wageworks.com/css/images/logo_phone_2x.png) no-repeat center center;
+		background-size:153px 35px;
+	}
+	
+	footer .footer .fb-icon
+	{
+		background-image:url(http://wageworks.com/css/images/icon_mobile_fb_2x.png);
+		background-size:16px 16px;
+	}
+	
+	footer .footer .twitter-icon,footer .footer .twitter-icon2
+	{
+		background-image:url(http://wageworks.com/css/images/icon_mobile_twitter_2x.png);
+		background-size:16px 16px;
+	}
+	
+	footer .footer .linkedin-icon
+	{
+		background-image:url(http://wageworks.com/css/images/icon_mobile_linkedin_2x.png);
+		background-size:16px 16px;
+	}
+	
+	footer nav .footer-logo
+	{
+		background-image:url(http://wageworks.com/css/images/logo_footer_phone_2x.png);
+		background-size:151px 71px;
+	}
+}
