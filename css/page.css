@@ -194,6 +194,8 @@ padding:0 0 0 30px;
 background: url('http://ebflute.github.io/restaurant//images/arrow-right-orange.png') no-repeat left center; 
 }
 
+#assets span  {font-size:16px;font-style:italic;}
+
         
         #footer {
             width: 100%;
@@ -502,11 +504,11 @@ background: url('http://ebflute.github.io/restaurant//images/arrow-right-orange.
   .brak-font2{right:-15px;}
   
   .leader-text{clear:both;}
- span .extension {font-size:16px;font-style:italic;}
-  
+.lead-text{visibiliy:none;}
+}
  
 }
-
+ 
 /* IE10 responsive compatability */
 @-ms-viewport {
   width: device-width;
