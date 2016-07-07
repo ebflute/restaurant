@@ -1,5 +1,23 @@
 @charset "UTF-8";
 /* CSS Document */
+
+/* Reset CSS */
+
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,
+form,fieldset,legend,input,button,textarea,p,blockquote,th
+td{margin:0;padding:0;}
+table{border-collapse:collapse;borderspacing:0;}
+fieldset,img{border:0;}
+address, caption,cite,code,dfn,em,strong,th,varoptgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}caption,th{text-align:left;}
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+
+body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+/* start custom css */ 
 * {
   box-sizing: border-box;
 }
@@ -27,16 +45,13 @@ a {
   text-decoration: none;
 }
 a:active, a:hover {
-  ctext-decoration: underline;
+  text-decoration: underline;
 }
 a img {
   border: none;
   color: inherit;
 }
-body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, th, td {
-  margin: 0;
-  padding: 0;
-}
+
 /*custom css */
 
 .intro-container {
@@ -110,12 +125,12 @@ body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, le
 }
 
 @media (min-width: 480px) {
-.responstable th:nth-child(2) span {
-  display: block;
-}
-.responstable th:nth-child(2):after {
-  display: none;
-}
+    .responstable th:nth-child(2) span {
+      display: block;
+    }
+    .responstable th:nth-child(2):after {
+      display: none;
+    }
 }
 .responstable td {
   display: block;
@@ -130,9 +145,9 @@ body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, le
 }
 
 @media (min-width: 480px) {
-.responstable td {
-  border: 1px solid #D9E4E6;
-}
+    .responstable td {
+      border: 1px solid #D9E4E6;
+    }
 }
 .responstable th, .responstable td {
   text-align: left;
@@ -140,10 +155,10 @@ body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, le
 }
 
 @media (min-width: 480px) {
-.responstable th, .responstable td {
-  display: table-cell;
-  padding: 1em;
-}
+    .responstable th, .responstable td {
+      display: table-cell;
+      padding: 1em;
+    }
 }
 h2 {
   font-size: 2.2em;
@@ -255,7 +270,7 @@ h4 {
   position: relative;
 }
 .brak-font1, .brak-font2 {
-  font-family: 'Open Sans', Raleway'', 'Abel', DinNextCondensed;
+  font-family: 'Open Sans', 'Abel', DinNextCondensed;
   font-size: 100px;
   color: #F1801F;
   position: absolute;
