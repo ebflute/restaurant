@@ -14,7 +14,7 @@ body {
             height:100%;
             position:relative;
             line-height: 1.2em;
-            font-size: 18px;
+            font-size: 20px;
             color: #4b4b4b;
             
         }
@@ -42,7 +42,7 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
 
 .intro-container{width:70%;text-align:center;margin:0 auto;} 
 #container { width: 1140px; margin: 0 auto; background:#fff; border-left:1px solid #ccc;border-right:1px solid #ccc;position:relative;  }
-
+.intro-container p {font-size:20px;}
 .inner {margin:40px ; }
 .home-blocks{width:1150px; margin:0 auto;}
 #logo-home {
@@ -66,7 +66,7 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
   color: #024457;
   border-radius: 10px;
   border: 1px solid #167F92;
-  font-family:arial, helvetica, Sans-Serif;
+  font-family: 'Abel', arial, helvetica, Sans-Serif;
 }
 .responstable tr {
   border: 1px solid #D9E4E6;
