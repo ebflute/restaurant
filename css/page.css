@@ -38,6 +38,8 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
 	padding: 0;
 }
 
+/*custom css */
+
 .intro-container{width:70%;text-align:center;margin:0 auto;} 
 #container { width: 1140px; margin: 0 auto; background:#fff; border-left:1px solid #ccc;border-right:1px solid #ccc;position:relative;  }
 
@@ -124,7 +126,7 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
 }
 
 h2{ font-size: 2.2em;
-    line-height: 1em;
+    line-height: 1.8em;
     font-weight: 300;
     border-bottom: 1px solid #f89a0f;
     padding-bottom: 7px;
@@ -133,9 +135,11 @@ h2{ font-size: 2.2em;
 }
 h3 {
     font-size:1.8em;
+    line-height: 1em;
 }
 h4 {
     font-size:1.2em ;
+    line-height: 1.2em;
 }
 
 /* Home Slider */
@@ -180,11 +184,11 @@ h4 {
 }
 #assets ul {margin:0 0 0 20px;padding:0;}
 
-#assets ul li {/*list-style-image: url('images/arrow-right-sm.png');*/
-list-style: none; 
+#assets ul li {
+list-style-type: none; 
 margin:0;
 padding:0 0 0 30px; 
-background: url(images/arrow-right-orange.png) no-repeat left top; 
+background: url('images/arrow-right-orange.png') no-repeat left center; 
 }
 
         
