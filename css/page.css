@@ -1,61 +1,76 @@
-*{box-sizing:border-box;}
-
-html,  body {
-	overflow-y: auto;
-    height:100%;
+@charset "UTF-8";
+/* CSS Document */
+* {
+  box-sizing: border-box;
 }
-
+html, body {
+  overflow-y: auto;
+  height: 100%;
+}
 body {
-            font-family: 'Abel', Arial, Helvetica, Sans-Serif;
-            margin: 0 auto;
-            border-left: 1px solid #ccc;
-            border-right: 1px solid #ccc;
-            background: #f5f5f5;
-            height:100%;
-            position:relative;
-            line-height: 1.2em;
-            font-size: 20px;
-            color: #4b4b4b;
-            
-        }
-
-h1,  h2,  h3,  h4,  h5,  h6 {
-
-         font-family: 'Abel', Arial, Helvetica, Sans-Serif;
-        }
-
-a {color: #1A88C5;text-decoration:none;}
-
-a:active, a:hover {ctext-decoration:underline;}
-
+  font-family: 'Abel', Arial, Helvetica, Sans-Serif;
+  margin: 0 auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #f5f5f5;
+  height: 100%;
+  position: relative;
+  line-height: 1.2em;
+  font-size: 20px;
+  color: #4b4b4b;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abel', Arial, Helvetica, Sans-Serif;
+}
+a {
+  color: #1A88C5;
+  text-decoration: none;
+}
+a:active, a:hover {
+  ctext-decoration: underline;
+}
 a img {
-	border: none;
-    color:inherit;
+  border: none;
+  color: inherit;
 }
-
-body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form,  fieldset,  legend,  input,  textarea,  th,  td {
-	margin: 0;
-	padding: 0;
+body, div, dl, dt, dd, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
 }
-
 /*custom css */
 
-.intro-container{width:70%;text-align:center;margin:0 auto;} 
-#container { width: 1140px; margin: 0 auto; background:#fff; border-left:1px solid #ccc;border-right:1px solid #ccc;position:relative;  }
-.intro-container p {font-size:20px;}
-.inner {margin:40px ; }
-.home-blocks{width:1150px; margin:0 auto;}
-#logo-home {
-  position:relative;
-    height: 70px;
-    width: 250px;
-    padding:0px 0px 15px 40px;
-    margin: 10px 0 20px 0;
-    display:block;
-    clear:both;
+.intro-container {
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
 }
-
-
+#container {
+  width: 1140px;
+  margin: 0 auto;
+  background: #fff;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  position: relative;
+}
+.intro-container p {
+  font-size: 20px;
+}
+.inner {
+  margin: 40px;
+}
+.home-blocks {
+  width: 1150px;
+  margin: 0 auto;
+}
+#logo-home {
+  position: relative;
+  height: 70px;
+  width: 250px;
+  padding: 0px 0px 15px 40px;
+  margin: 10px 0 20px 0;
+  display: block;
+  clear: both;
+}
 /*reponsive table*/
 
 .responstable {
@@ -82,7 +97,7 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
   padding: 1em;
 }
 .responstable th:first-child {
-  display: table-cell; 
+  display: table-cell;
 }
 .responstable th:nth-child(2) {
   display: table-cell;
@@ -93,13 +108,14 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
 .responstable th:nth-child(2):after {
   content: attr(data-th);
 }
+
 @media (min-width: 480px) {
-  .responstable th:nth-child(2) span {
-    display: block;
-  }
-  .responstable th:nth-child(2):after {
-    display: none;
-  }
+.responstable th:nth-child(2) span {
+  display: block;
+}
+.responstable th:nth-child(2):after {
+  display: none;
+}
 }
 .responstable td {
   display: block;
@@ -112,423 +128,778 @@ body,  div,  dl,  dt,  dd,  li,  h1,  h2,  h3,  h4,  h5,  h6,  pre,  code,  form
   text-align: left;
   border-right: 1px solid #D9E4E6;
 }
+
 @media (min-width: 480px) {
-  .responstable td {
-    border: 1px solid #D9E4E6;
-  }
+.responstable td {
+  border: 1px solid #D9E4E6;
+}
 }
 .responstable th, .responstable td {
   text-align: left;
   margin: .5em 1em;
 }
-@media (min-width: 480px) {
-  .responstable th, .responstable td {
-    display: table-cell;
-    padding: 1em;
-  }
-}
 
-h2{ font-size: 2.2em;
-    line-height: 1em;
-    font-weight: 300;
-    border-bottom: 1px solid #f89a0f;
-    padding-bottom: 7px;
-    margin-bottom: 20px;
-    text-align:center;
+@media (min-width: 480px) {
+.responstable th, .responstable td {
+  display: table-cell;
+  padding: 1em;
+}
+}
+h2 {
+  font-size: 2.2em;
+  line-height: 1em;
+  font-weight: 300;
+  border-bottom: 1px solid #f89a0f;
+  padding-bottom: 7px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 h3 {
-    font-size:1.8em;
-    line-height: 1em;
+  font-size: 1.8em;
+  line-height: 1em;
 }
 h4 {
-    font-size:1.2em ;
-    line-height: 1.2em;
+  font-size: 1.2em;
+  line-height: 1.2em;
 }
-
 /* Home Slider */
-#home-banner{height:470px; position:relative}
-#home-slider{height:470px; width:100%; position:relative; z-index:40; top:0; left:0;}
-#home-slider .swipe-wrap{height:480px;}
-#home-slider .slide{width:100%; height:480px; background:#ddd; background-size:cover; background-position:top left;} 
-#home-slider .slide .lead-text {position: absolute; top: 35%; width:530px; right: 0px; font-weight: 200; text-align: center; letter-spacing:1px; }
-#home-slider .slide .lead-text h1 { font-weight: 100; color: #5c6d5a; font-size:30px; line-height:30px; padding-bottom:15px;}
-#home-slider .slide .lead-text h1 span.norm {display: block; font-size:65px; line-height:60px; font-weight:300;}
-#home-slider .slide .lead-text h2 {display:inline-block; font-weight:100; color: #5c6d5a; font-size:30px; line-height: 32px; position:relative; padding:0 15px;border:none;}
-#home-slider .slide .lead-text .brak-1{background:url(https://wageworks.com/css/images/leadbracket-right.png) no-repeat bottom right; height:82px; display:inline-block;}
-#home-slider .slide .lead-text .brak-2{background:url(https://wageworks.com/css/images/leadbracket-left.png) no-repeat bottom left; height:72px; display:inline-block; padding:5px 20px;}
-.home-slider-logo{position:absolute; z-index:50; right:166px; top:40px; background:url(https://wageworks.com/css/images/yay_guy_new.png) no-repeat top center; height:115px; width:200px;}
-
+#home-banner {
+  height: 470px;
+  position: relative
+}
+#home-slider {
+  height: 470px;
+  width: 100%;
+  position: relative;
+  z-index: 40;
+  top: 0;
+  left: 0;
+}
+#home-slider .swipe-wrap {
+  height: 480px;
+}
+#home-slider .slide {
+  width: 100%;
+  height: 480px;
+  background: #ddd;
+  background-size: cover;
+  background-position: top left;
+}
+#home-slider .slide .lead-text {
+  position: absolute;
+  top: 35%;
+  width: 530px;
+  right: 0px;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#home-slider .slide .lead-text h1 {
+  font-weight: 100;
+  color: #5c6d5a;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+#home-slider .slide .lead-text h1 span.norm {
+  display: block;
+  font-size: 65px;
+  line-height: 60px;
+  font-weight: 300;
+}
+#home-slider .slide .lead-text h2 {
+  display: inline-block;
+  font-weight: 100;
+  color: #5c6d5a;
+  font-size: 30px;
+  line-height: 32px;
+  position: relative;
+  padding: 0 15px;
+  border: none;
+}
+#home-slider .slide .lead-text .brak-1 {
+  background: url(https://wageworks.com/css/images/leadbracket-right.png) no-repeat bottom right;
+  height: 82px;
+  display: inline-block;
+}
+#home-slider .slide .lead-text .brak-2 {
+  background: url(https://wageworks.com/css/images/leadbracket-left.png) no-repeat bottom left;
+  height: 72px;
+  display: inline-block;
+  padding: 5px 20px;
+}
+.home-slider-logo {
+  position: absolute;
+  z-index: 50;
+  right: 166px;
+  top: 40px;
+  background: url(https://wageworks.com/css/images/yay_guy_new.png) no-repeat top center;
+  height: 115px;
+  width: 200px;
+}
 /* Sliders */
-.swipe {overflow: hidden; visibility: hidden; position: relative; -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0);}
-.swipe-wrap {overflow: hidden; position: relative;}
-.swipe-wrap > div{float:left; width:100%; position: relative;}
-
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
 .brak-font1, .brak-font2 {
-    font-family: 'Open Sans', Raleway'', 'Abel', DinNextCondensed;
-    font-size: 100px;
-     color: #F1801F;
-    position: absolute;
-    top: 18px;
-    font-weight: 100;
+  font-family: 'Open Sans', Raleway'', 'Abel', DinNextCondensed;
+  font-size: 100px;
+  color: #F1801F;
+  position: absolute;
+  top: 18px;
+  font-weight: 100;
 }
 .brak-font1 {
-    left: -35px;
+  left: -35px;
 }
 .brak-font2 {
-    right: -35px;
+  right: -35px;
 }
 .title-Text2, .title-Text2 a {
-    font-family: 'Abel', DinNext, Arial, Helvetica, Sans-Serif;
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 26px;
-    color: #1A88C5;
-    padding-bottom: 10px;
+  font-family: 'Abel', DinNext, Arial, Helvetica, Sans-Serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 26px;
+  color: #1A88C5;
+  padding-bottom: 10px;
 }
-#assets ul {margin:0 0 0 20px;padding:0;}
-
+#assets ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
 #assets ul li {
-list-style-type: none; 
-margin:0;
-padding:0 0 0 30px; 
-background: url('http://ebflute.github.io/restaurant//images/arrow-right-orange.png') no-repeat left center; 
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 30px;
+  background: url('http://ebflute.github.io/restaurant//images/arrow-right-orange.png') no-repeat left center;
+}
+#assets span {
+  font-size: 16px;
+  font-style: italic;
+}
+#footer {
+  width: 100%;
+  height: 187px;
+}
+#footer .alignleft {
+  float: left;
+  padding-left: 50px;
+}
+#footer .alignright {
+  float: right;
+  padding-right: 50px;
+}
+#footer .aligncenter {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer .clear {
+  clear: both;
+}
+#footer li {
+  list-style-type: none;
+  line-height: 20px;
+  display: inline;
+}
+#footer #social {
+  background: #eee url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{951e616d-4dcb-4de1-b0e9-e4cd9b853e5c}_nav_footer_bg.png) repeat left top;
+  font-family: 'Abel';
+  font-weight: normal;
+}
+#footer #social {
+  padding: 20px 0;
+  border-top: 1px solid #ccc;
+}
+#footer #social .social-link {
+  padding-left: 0px;
+}
+#footer #social li {
+  padding-right: 60px;
+}
+#footer #social li:last-child {
+  padding-right: 0;
+}
+#footer #social li a {
+  text-decoration: none;
+  color: #4b4b4b;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 300;
+}
+#footer #social a:hover,  #footer #social a:active {
+  text-decoration: none;
+  color: #077ec0;
+}
+#footer #social .social-icon {
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  padding-right: 0px;
+  position: relative;
+  top: 4px;
+  left: 0px;
+}
+#footer #social .facebook-icon {
+  background: url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{d385e564-abb9-40eb-aa22-1512b5bb740d}_footer_facebook.png) no-repeat left top;
+}
+#footer #social .twitter-icon {
+  background: url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{c5fa3193-b19e-4ab1-800d-4f6abd974e7c}_footer_twitter.png) no-repeat left top;
+}
+#footer #social .linkedin-icon {
+  background: url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{8ca1106c-1ba2-4f01-b15b-bf3e3c269723}_footer_linkedin.png) no-repeat left top;
+}
+#footer #copyright {
+  background: #dddddd url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{f2b90e20-4e7c-4e3b-b5ce-03227603edec}_footer_bottom_bg.gif) repeat left top;
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+  font-size: 13px;
+  overflow: hidden;
+}
+#footer #copyright ul {
+  padding-left: 0;
+}
+#footer #copyright li {
+  padding: 0 10px;
+  border-left: 1px solid #666666;
+}
+#footer #copyright li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+#footer #copyright li:last-child {
+  padding-right: 0;
+}
+#footer #copyright li a,  #footer #copyright li {
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  color: #333333;
+  text-transform: none;
+  font-size: 12px;
+  line-height: 17px;
+  font-weight: 500;
+}
+#footer #copyright a:hover,  #footer #copyright a:active {
+  text-decoration: none;
+  color: #077ec0;
 }
 
-#assets span  {font-size:16px;font-style:italic;}
-
-        
-        #footer {
-            width: 100%;
-            height: 187px;
-        }
-        
-        #footer .alignleft {
-            float: left;
-            padding-left: 50px;
-        }
-        
-        #footer .alignright {
-            float: right;
-            padding-right: 50px;
-        }
-        
-        #footer .aligncenter {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        #footer .clear {
-            clear: both;
-        }
-        
-        #footer li {
-            list-style-type: none;
-            line-height: 20px;
-            display: inline;
-        }
-        
-        #footer #social {
-            background: #eee url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{951e616d-4dcb-4de1-b0e9-e4cd9b853e5c}_nav_footer_bg.png) repeat left top;
-            font-family: 'Abel';
-            font-weight: normal;
-        }
-        
-        #footer #social {
-            padding: 20px 0;
-            border-top: 1px solid #ccc;
-        }
-        
-        #footer #social .social-link {
-            padding-left: 0px;
-        }
-        
-        #footer #social li {
-            padding-right: 60px;
-        }
-        
-        #footer #social li:last-child {
-            padding-right: 0;
-        }
-        
-        #footer #social li a {
-            text-decoration: none;
-            color: #4b4b4b;
-            font-size: 13px;
-            line-height: 17px;
-            font-weight: 300;
-        }
-        
-        #footer #social a:hover,
-        #footer #social a:active {
-            text-decoration: none;
-            color: #077ec0;
-        }
-        
-        #footer #social .social-icon {
-            width: 17px;
-            height: 17px;
-            display: inline-block;
-            padding-right: 0px;
-            position: relative;
-            top: 4px;
-            left: 0px;
-        }
-        
-        #footer #social .facebook-icon {
-            background: url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{d385e564-abb9-40eb-aa22-1512b5bb740d}_footer_facebook.png) no-repeat left top;
-        }
-        
-        #footer #social .twitter-icon {
-            background: url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{c5fa3193-b19e-4ab1-800d-4f6abd974e7c}_footer_twitter.png) no-repeat left top;
-        }
-        
-        #footer #social .linkedin-icon {
-            background: url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{8ca1106c-1ba2-4f01-b15b-bf3e3c269723}_footer_linkedin.png) no-repeat left top;
-        }
-        
-        #footer #copyright {
-            background: #dddddd url(http://images.notice.wageworks.com/EloquaImages/clients/WageWorksInc/{f2b90e20-4e7c-4e3b-b5ce-03227603edec}_footer_bottom_bg.gif) repeat left top;
-            border-top: 1px solid #ccc;
-            padding: 20px 0;
-            font-size: 13px;
-            overflow:hidden;
-        }
-        
-        #footer #copyright ul {
-            padding-left: 0;
-        }
-        
-        #footer #copyright li {
-            padding: 0 10px;
-            border-left: 1px solid #666666;
-        }
-        
-        #footer #copyright li:first-child {
-            padding-left: 0;
-            border-left: none;
-        }
-        
-        #footer #copyright li:last-child {
-            padding-right: 0;
-        }
-        
-        #footer #copyright li a,
-        #footer #copyright li {
-            font-family: Helvetica, Arial, Sans-Serif;
-            text-decoration: none;
-            color: #333333;
-            text-transform: none;
-            font-size: 12px;
-            line-height: 17px;
-            font-weight: 500;
-        }
-        
-        #footer #copyright a:hover,
-        #footer #copyright a:active {
-            text-decoration: none;
-            color: #077ec0;
-        }
-
-        /** Responsive Limits **/
+/** Responsive Limits **/
 
 
 /* Container */
-@media all and (min-width:1280px)  { #container{width:1280px; margin:0 auto; position:relative; border-right: 1px solid #d1cdcc; border-left: 1px solid #d1cdcc; background:#fff;} }
-@media all and (max-width:1280px)  { #container{width:100%; border-right:0px none; border-left:0px none; background:#fff;} }
+@media all and (min-width:1280px) {
+#container {
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  border-right: 1px solid #d1cdcc;
+  border-left: 1px solid #d1cdcc;
+  background: #fff;
+}
+}
 
-
+@media all and (max-width:1280px) {
+#container {
+  width: 100%;
+  border-right: 0px none;
+  border-left: 0px none;
+  background: #fff;
+}
+}
 
 /* If the width is less than 820px */
-@media all and (max-width: 820px){
-    
+@media all and (max-width: 820px) {
 }
 
-
-
-
-@media all and (max-width:1024px){
-  .b-bracket{display:none;}
+@media all and (max-width:1024px) {
+.b-bracket {
+  display: none;
+}
 }
 
-@media all and (max-width:1000px){
-
+@media all and (max-width:1000px) {
 }
+
 /* If the width is less than 960px */
-@media all and (max-width: 960px){
-    .sub-width{ width: 98%; margin: 0 1%;}
-   
-    #viewport{position:relative; background:#fff; z-index:40; }
-    #viewport.menuright{ border-left:1px solid #d1cdcc; -webkit-transform: translateX(-240px); -moz-transform: translateX(-240px); -ms-transform: translateX(-240px); -o-transform: translateX(-240px); transform: translateX(-240px); }
-    #viewport.menuleft{ border-right:1px solid #d1cdcc; -webkit-transform: translateX(240px); -moz-transform: translateX(240px); -ms-transform: translateX(240px);  -o-transform: translateX(240px); transform: translateX(240px); }
-    
-
-    header{height:65px;}
-    header .head-logo{top:14px; left:0;}
-    header .head-logo a { height:41px; width:181px; margin:0 auto;}
-        header .head-logo.defaultLogo a { background: url(https://wageworks.com/css/images/ww-logo-small-phone.png) no-repeat top left; height:41px; width:305px; background-size:79%;}
-    header .head-logo.mini-head{}
-    header .head-logo .mini-head-container{width:330px; margin:0 auto;}
-    header .head-logo .mini-head-container a.main-logo{margin:0; float:left;}
-    header .head-logo .mini-head-container a.mini-logo{margin:0; width:140px; height:60px; float:right; position:relative; top:-10px; left:0;}
-  
-    
-  
-    #home-slider{width:100%; position:absolute; z-index:40; top:0; left:0;}
-    #home-slider .swipe-wrap{height:auto;}    
-  
-    #home-banner, #home-slider{height:425px;}
-    #home-slider .slide{height:397px;}
-    #home-slider .slide .lead-text { top: 40%; width: 430px; right: 20px;}
-  
-    #home-slider .slide .lead-text h1 { font-size:20px; line-height:20px; padding-bottom:10px;}
-    #home-slider .slide .lead-text h1 span.norm {font-size:40px; line-height:40px;}
-    #home-slider .slide .lead-text h2 {font-size:25px; line-height:30px;}
-  
-    .home-slider-buttons {text-align: center; top: 320px; right:45px;}
-    .home-slider-buttons a{width: 115px; padding-top: 8px; float: none; display: inline-block; line-height: 20px;}
-    .home-slider-buttons a:last-child{margin-right:0;}
-    .home-slider-logo{ background:url(https://wageworks.com/css/images/yay_tablet.png) no-repeat top center; height:99px; width:430px; right:20px; top:70px;}
-    
-  
-    footer{position:relative;}
-  
-    
+@media all and (max-width: 960px) {
+.sub-width {
+  width: 98%;
+  margin: 0 1%;
 }
+#viewport {
+  position: relative;
+  background: #fff;
+  z-index: 40;
+}
+#viewport.menuright {
+  border-left: 1px solid #d1cdcc;
+  -webkit-transform: translateX(-240px);
+  -moz-transform: translateX(-240px);
+  -ms-transform: translateX(-240px);
+  -o-transform: translateX(-240px);
+  transform: translateX(-240px);
+}
+#viewport.menuleft {
+  border-right: 1px solid #d1cdcc;
+  -webkit-transform: translateX(240px);
+  -moz-transform: translateX(240px);
+  -ms-transform: translateX(240px);
+  -o-transform: translateX(240px);
+  transform: translateX(240px);
+}
+header {
+  height: 65px;
+}
+header .head-logo {
+  top: 14px;
+  left: 0;
+}
+header .head-logo a {
+  height: 41px;
+  width: 181px;
+  margin: 0 auto;
+}
+header .head-logo.defaultLogo a {
+  background: url(https://wageworks.com/css/images/ww-logo-small-phone.png) no-repeat top left;
+  height: 41px;
+  width: 305px;
+  background-size: 79%;
+}
+header .head-logo.mini-head {
+}
+header .head-logo .mini-head-container {
+  width: 330px;
+  margin: 0 auto;
+}
+header .head-logo .mini-head-container a.main-logo {
+  margin: 0;
+  float: left;
+}
+header .head-logo .mini-head-container a.mini-logo {
+  margin: 0;
+  width: 140px;
+  height: 60px;
+  float: right;
+  position: relative;
+  top: -10px;
+  left: 0;
+}
+#home-slider {
+  width: 100%;
+  position: absolute;
+  z-index: 40;
+  top: 0;
+  left: 0;
+}
+#home-slider .swipe-wrap {
+  height: auto;
+}
+#home-banner, #home-slider {
+  height: 425px;
+}
+#home-slider .slide {
+  height: 397px;
+}
+#home-slider .slide .lead-text {
+  top: 40%;
+  width: 430px;
+  right: 20px;
+}
+#home-slider .slide .lead-text h1 {
+  font-size: 20px;
+  line-height: 20px;
+  padding-bottom: 10px;
+}
+#home-slider .slide .lead-text h1 span.norm {
+  font-size: 40px;
+  line-height: 40px;
+}
+#home-slider .slide .lead-text h2 {
+  font-size: 25px;
+  line-height: 30px;
+}
+.home-slider-buttons {
+  text-align: center;
+  top: 320px;
+  right: 45px;
+}
+.home-slider-buttons a {
+  width: 115px;
+  padding-top: 8px;
+  float: none;
+  display: inline-block;
+  line-height: 20px;
+}
+.home-slider-buttons a:last-child {
+  margin-right: 0;
+}
+.home-slider-logo {
+  background: url(https://wageworks.com/css/images/yay_tablet.png) no-repeat top center;
+  height: 99px;
+  width: 430px;
+  right: 20px;
+  top: 70px;
+}
+footer {
+  position: relative;
+}
+}
+
 /* If Tablet and Phone */
-@media all and (max-width: 770px){
-  
-  .hidden-desktop { display: inherit !important; }
-  .visible-desktop { display: none !important; }
- 
-  
-  footer nav{position:relative;}
-  footer nav .foot-logo{position:absolute; text-align:center; width:100%;}
-  footer nav .fluid ul .fluid.last{padding-bottom:14px;}
-  footer .footer .fluid.foot-logo{padding-top:0;}
-  footer .footer .social-icon{width: 17px; height: 17px; display: block; padding-right: 4px;}
-  footer .footer .fb-icon {background: url(https://wageworks.com/images/footer_FB.png) no-repeat left top;}
-  footer .footer .twitter-icon {background: url(https://wageworks.com/images/footeR_twitter.png) no-repeat left top; }
-  footer .footer .linkedin-icon {background: url(https://wageworks.com/images/footer_linkedin.png) no-repeat left top; }
-  footer .footer .rss-icon {background: url(https://wageworks.com/images/footer_rss.png) no-repeat left top;}
-  footer .copyright {padding:100px 0 10px 0; text-align:center;}
-  footer .copyright.mini-footer{padding-top:10px;}
-  footer .copyright ul{ float:left; width:100%;}
-  footer .copyright li{display:inline; display:inline-block; margin:5px 0;}
-  footer .copyright li.last {border: 0 none;}
-  footer .copyright li.first {}
-  footer .copyright .right-desktop li {border-left:1px solid #666;}
-  
-  footer .footer{padding:0;}
-  footer nav .fluid{padding-bottom:0px;}
-  footer nav .fluid.spanfoot.foot-logo{bottom:-105px; width:100%; padding-bottom:0;}
-  footer nav .foot-logo .first-wrapper{width:50%; margin:0 auto;}
-  
-  footer .copyright .phone-full {clear:both; display:block; padding:0;}  
- 
-  
- 
+@media all and (max-width: 770px) {
+      .hidden-desktop {
+        display: inherit !important;
+      }
+      .visible-desktop {
+        display: none !important;
+      }
+      footer nav {
+        position: relative;
+      }
+      footer nav .foot-logo {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+      footer nav .fluid ul .fluid.last {
+        padding-bottom: 14px;
+      }
+      footer .footer .fluid.foot-logo {
+        padding-top: 0;
+      }
+      footer .footer .social-icon {
+        width: 17px;
+        height: 17px;
+        display: block;
+        padding-right: 4px;
+      }
+      footer .footer .fb-icon {
+        background: url(https://wageworks.com/images/footer_FB.png) no-repeat left top;
+      }
+      footer .footer .twitter-icon {
+        background: url(https://wageworks.com/images/footeR_twitter.png) no-repeat left top;
+      }
+      footer .footer .linkedin-icon {
+        background: url(https://wageworks.com/images/footer_linkedin.png) no-repeat left top;
+      }
+      footer .footer .rss-icon {
+        background: url(https://wageworks.com/images/footer_rss.png) no-repeat left top;
+      }
+      footer .copyright {
+        padding: 100px 0 10px 0;
+        text-align: center;
+      }
+      footer .copyright.mini-footer {
+        padding-top: 10px;
+      }
+      footer .copyright ul {
+        float: left;
+        width: 100%;
+      }
+      footer .copyright li {
+        display: inline;
+        display: inline-block;
+        margin: 5px 0;
+      }
+      footer .copyright li.last {
+        border: 0 none;
+      }
+      footer .copyright li.first {
+      }
+      footer .copyright .right-desktop li {
+        border-left: 1px solid #666;
+      }
+      footer .footer {
+        padding: 0;
+      }
+      footer nav .fluid {
+        padding-bottom: 0px;
+      }
+      footer nav .fluid.spanfoot.foot-logo {
+        bottom: -105px;
+        width: 100%;
+        padding-bottom: 0;
+      }
+      footer nav .foot-logo .first-wrapper {
+        width: 50%;
+        margin: 0 auto;
+      }
+      footer .copyright .phone-full {
+              clear: both;
+              display: block;
+              padding: 0;
+      }
 }
 
-@media all and (max-width: 770px) and (min-width:560px){
-  
-  .intro-text {font-size:18px;}
-  .visible-tablet { display: inherit !important; }
-  .hidden-tablet { display: none !important; }
-  
-  .left-tablet{float:left;}
-  .right-tablet{float:right;}
-  
- 
-  footer nav .fluid.spanfoot{width:33%; padding:20px 0}
-  
-  footer .copyright .phone-full {padding: 0 0 0 10px; float:none; clear:none; display:inline-block;}
-  footer .copyright ul, footer .copyright li{display:inline-block;}
-  footer .copyright ul{float:none;}
-  footer .copyright .left-desktop, footer .copyright .right-desktop{width:auto; display:inline; text-align:center;}
-
-  
+@media all and (max-width: 770px) and (min-width:560px) {
+      .intro-text {
+        font-size: 18px;
+      }
+      .visible-tablet {
+        display: inherit !important;
+      }
+      .hidden-tablet {
+        display: none !important;
+      }
+      .left-tablet {
+        float: left;
+      }
+      .right-tablet {
+        float: right;
+      }
+      footer nav .fluid.spanfoot {
+        width: 33%;
+        padding: 20px 0
+      }
+      footer .copyright .phone-full {
+        padding: 0 0 0 10px;
+        float: none;
+        clear: none;
+        display: inline-block;
+      }
+      footer .copyright ul, footer .copyright li {
+        display: inline-block;
+      }
+      footer .copyright ul {
+        float: none;
+      }
+      footer .copyright .left-desktop, footer .copyright .right-desktop {
+        width: auto;
+        display: inline;
+        text-align: center;
+      }
 }
 
 @media all and (max-width: 560px) {
-  body{font-size:18px;}
-  .title-Text {font-size:26px;  line-height:30px;}
-  .title-Text2 {font-size:20px;  line-height:26px;}
-  .sub-Title {font-size: 15px; line-height:18px;}
-  
-  .visible-phone { display: inherit !important; }
-  .hidden-phone { display: none !important; }
-  .phone-sized, .phone-full, .component .span2 .fluid.span2, .fluid.span4, .fluid.span4-desk, .fluid.span3, .fluid.span3-2, .fluid.span3-desk, 
-
-  
-  header{height:55px;}
-  header .head-logo{top:12px;}
-  header .head-logo a{background:url(https://wageworks.com/css/images/logo-phone.png) no-repeat top left; height:35px; width:153px;}
-  header .head-logo.defaultLogo a { background: url(https://wageworks.com/css/images/ww-logo-small-phone.png) no-repeat top left; height:41px; width:189px; background-size:100%;}
-  
-  header .head-logo .mini-head-container{}
-  header .head-logo .mini-head-container a.main-logo{margin:0 auto; float:none;}
-  header .head-logo .mini-head-container a.main-logo.wmini{background-size: contain; position: relative; background-position: left center; width: 120px; right: 30px;}
-  header .head-logo .mini-head-container a.mini-logo{margin:0; width:30%; height:46px; float:right; position:absolute; right:5px; left:auto; top:-8px; background-position:center right;}
- 
-  
-  footer nav .footer-logo{background:url(https://wageworks.com/css/images/logo-footer-phone.png) no-repeat top left; margin:0 auto; width:151px; height:72px;}
-  footer nav .foot-logo .first-wrapper{width:70%; margin:0 auto;}
-  footer nav .spanfoot-ico ul{padding-left:0;}
-  footer nav .fluid.spanfoot{width:50%; padding:20px 0}
-  footer nav ul .fluid.fluid-ico, footer nav ul .fluid.fluid-ico.last {width:23%; float:left; margin:1%; background:#AAA; padding-bottom:0;}
-  footer nav .social-icon{width:100%; background-position:center center;}
-  footer nav .fluid.spanfoot-ico.spanfoot { width: 100%; padding-top:0;}
-  footer .footer .social-icon{position:static; background-position:center center; width:100%; padding:10px 0;}  
-  footer .copyright .right-desktop li{border-left:0 none;}
-  
-  footer .footer .fb-icon {background-image: url(https://wageworks.com/images/icon_facebook.png);}
-  footer .footer .twitter-icon, footer .footer .twitter-icon2 {background-image: url(https://wageworks.com/images/icon_twitter.png);}
-  footer .footer .linkedin-icon {background-image: url(https://wageworks.com/images/icon_linkedin.png);}
-  footer .footer .rss-icon {background-image: url(https://wageworks.com/images/icon_rss.png);}
-  
-  #home-banner, #home-slider{height:360px;}
-  #home-slider .slide{height:370px; background-position:top center;}
-  .home-slider-logo{width:240px; right:20px; background:url(https://wageworks.com/css/images/yay_mobile.png) no-repeat top center; height:69px; }
-  .home-slider-buttons{width:100%; right:0; top:425px;}
-  .home-slider-buttons a div{display:none;}
-  .home-slider-buttons a{width:95%; margin:0 0 10px 0; font-size: 18px; line-height: 40px;}
-  
-  #home-slider .slide .lead-text{width:240px; text-align:center; right:20px;}
-  #home-slider .slide .lead-text h1 { font-size:18px; line-height:22px;}
-  #home-slider .slide .lead-text h1 span.norm {font-size:28px; line-height:30px;}
-  #home-slider .slide .lead-text h2 {font-size:15px; line-height:20px;}
-  
-  .brak-font1, .brak-font2{font-size: 58px; top: 10px; }
-  .brak-font1{left:-15px;}
-  .brak-font2{right:-15px;}
-  
-  .leader-text{clear:both;}
-.lead-text{visibiliy:none;}
-}
- 
+      body {
+        font-size: 18px;
+      }
+      .title-Text {
+        font-size: 26px;
+        line-height: 30px;
+      }
+      .title-Text2 {
+        font-size: 20px;
+        line-height: 26px;
+      }
+      .sub-Title {
+        font-size: 15px;
+        line-height: 18px;
+      }
+      .visible-phone {
+        display: inherit !important;
+      }
+      .hidden-phone {
+        display: none !important;
+      }
+      .phone-sized, .phone-full, .component .span2 .fluid.span2, .fluid.span4, .fluid.span4-desk, .fluid.span3, .fluid.span3-2, .fluid.span3-desk,  header {
+        height: 55px;
+      }
+      header .head-logo {
+        top: 12px;
+      }
+      header .head-logo a {
+        background: url(https://wageworks.com/css/images/logo-phone.png) no-repeat top left;
+        height: 35px;
+        width: 153px;
+      }
+      header .head-logo.defaultLogo a {
+        background: url(https://wageworks.com/css/images/ww-logo-small-phone.png) no-repeat top left;
+        height: 41px;
+        width: 189px;
+        background-size: 100%;
+      }
+      header .head-logo .mini-head-container {
+      }
+      header .head-logo .mini-head-container a.main-logo {
+        margin: 0 auto;
+        float: none;
+      }
+      header .head-logo .mini-head-container a.main-logo.wmini {
+        background-size: contain;
+        position: relative;
+        background-position: left center;
+        width: 120px;
+        right: 30px;
+      }
+      header .head-logo .mini-head-container a.mini-logo {
+        margin: 0;
+        width: 30%;
+        height: 46px;
+        float: right;
+        position: absolute;
+        right: 5px;
+        left: auto;
+        top: -8px;
+        background-position: center right;
+      }
+      footer nav .footer-logo {
+        background: url(https://wageworks.com/css/images/logo-footer-phone.png) no-repeat top left;
+        margin: 0 auto;
+        width: 151px;
+        height: 72px;
+      }
+      footer nav .foot-logo .first-wrapper {
+        width: 70%;
+        margin: 0 auto;
+      }
+      footer nav .spanfoot-ico ul {
+        padding-left: 0;
+      }
+      footer nav .fluid.spanfoot {
+        width: 50%;
+        padding: 20px 0
+      }
+      footer nav ul .fluid.fluid-ico, footer nav ul .fluid.fluid-ico.last {
+        width: 23%;
+        float: left;
+        margin: 1%;
+        background: #AAA;
+        padding-bottom: 0;
+      }
+      footer nav .social-icon {
+        width: 100%;
+        background-position: center center;
+      }
+      footer nav .fluid.spanfoot-ico.spanfoot {
+        width: 100%;
+        padding-top: 0;
+      }
+      footer .footer .social-icon {
+        position: static;
+        background-position: center center;
+        width: 100%;
+        padding: 10px 0;
+      }
+      footer .copyright .right-desktop li {
+        border-left: 0 none;
+      }
+      footer .footer .fb-icon {
+        background-image: url(https://wageworks.com/images/icon_facebook.png);
+      }
+      footer .footer .twitter-icon, footer .footer .twitter-icon2 {
+        background-image: url(https://wageworks.com/images/icon_twitter.png);
+      }
+      footer .footer .linkedin-icon {
+        background-image: url(https://wageworks.com/images/icon_linkedin.png);
+      }
+      footer .footer .rss-icon {
+        background-image: url(https://wageworks.com/images/icon_rss.png);
+      }
+      #home-banner, #home-slider {
+        height: 360px;
+      }
+      #home-slider .slide {
+        height: 370px;
+        background-position: top center;
+      }
+      .home-slider-logo {
+        width: 240px;
+        right: 20px;
+        background: url(https://wageworks.com/css/images/yay_mobile.png) no-repeat top center;
+        height: 69px;
+      }
+      .home-slider-buttons {
+        width: 100%;
+        right: 0;
+        top: 425px;
+      }
+      .home-slider-buttons a div {
+        display: none;
+      }
+      .home-slider-buttons a {
+        width: 95%;
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        line-height: 40px;
+      }
+      #home-slider .slide .lead-text {
+        width: 240px;
+        text-align: center;
+        right: 20px;
+      }
+      #home-slider .slide .lead-text h1 {
+        font-size: 18px;
+        line-height: 22px;
+      }
+      #home-slider .slide .lead-text h1 span.norm {
+        font-size: 28px;
+        line-height: 30px;
+      }
+      #home-slider .slide .lead-text h2 {
+        font-size: 15px;
+        line-height: 20px;
+      }
+      .brak-font1, .brak-font2 {
+        font-size: 58px;
+        top: 10px;
+      }
+      .brak-font1 {
+        left: -15px;
+      }
+      .brak-font2 {
+        right: -15px;
+      }
+      .leader-text {
+        clear: both;
+      }
+      .lead-text {
+        visibiliy: none;
+      }
 }
  
 /* IE10 responsive compatability */
 @-ms-viewport {
-  width: device-width;
+        width: device-width;
 }
 
 /* For Retina */ 
 
 
-@media  (-webkit-min-device-pixel-ratio: 2) and (max-width: 960px) , (min-resolution: 192dpi) and (max-width: 960px) 
-{
-    header .head-logo a{background-image: url(http://wageworks.com/css/images/logo_tablet_2x.png); background-size: 181px 41px;}
-    footer nav .footer-logo {background-image: url(http://wageworks.com/css/images/logo_footer_tablet2x.png); background-size:151px 71px;}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 960px), (min-resolution: 192dpi) and (max-width: 960px) {
+      header .head-logo a {
+        background-image: url(http://wageworks.com/css/images/logo_tablet_2x.png);
+        background-size: 181px 41px;
+      }
+      footer nav .footer-logo {
+        background-image: url(http://wageworks.com/css/images/logo_footer_tablet2x.png);
+        background-size: 151px 71px;
+      }
 }
 
-@media  (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px) , (min-resolution: 192dpi) and (max-width: 480px) 
-{
-    header .head-logo a{background: url(http://wageworks.com/css/images/logo_phone_2x.png) no-repeat center center; background-size: 153px 35px;}    
-    footer .footer .fb-icon {background-image: url(http://wageworks.com/css/images/icon_mobile_fb_2x.png); background-size: 16px 16px;}
-    footer .footer .twitter-icon, footer .footer .twitter-icon2 {background-image: url(http://wageworks.com/css/images/icon_mobile_twitter_2x.png); background-size: 16px 16px;}
-    footer .footer .linkedin-icon {background-image: url(http://wageworks.com/css/images/icon_mobile_linkedin_2x.png); background-size: 16px 16px;}
-    
-    footer nav .footer-logo{background-image: url(http://wageworks.com/css/images/logo_footer_phone_2x.png); background-size:151px 71px;}
+@media (-webkit-min-device-pixel-ratio: 2) and (max-width: 480px), (min-resolution: 192dpi) and (max-width: 480px) {
+      header .head-logo a {
+        background: url(http://wageworks.com/css/images/logo_phone_2x.png) no-repeat center center;
+        background-size: 153px 35px;
+      }
+      footer .footer .fb-icon {
+        background-image: url(http://wageworks.com/css/images/icon_mobile_fb_2x.png);
+        background-size: 16px 16px;
+      }
+      footer .footer .twitter-icon, footer .footer .twitter-icon2 {
+        background-image: url(http://wageworks.com/css/images/icon_mobile_twitter_2x.png);
+        background-size: 16px 16px;
+      }
+      footer .footer .linkedin-icon {
+        background-image: url(http://wageworks.com/css/images/icon_mobile_linkedin_2x.png);
+        background-size: 16px 16px;
+      }
+      footer nav .footer-logo {
+        background-image: url(http://wageworks.com/css/images/logo_footer_phone_2x.png);
+        background-size: 151px 71px;
+      }
 }
