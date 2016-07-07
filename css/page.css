@@ -188,7 +188,7 @@ h4 {
 list-style-type: none; 
 margin:0;
 padding:0 0 0 30px; 
-background: url('images/arrow-right-orange.png') no-repeat left center; 
+background: url('/images/arrow-right-orange.png') no-repeat left center; 
 }
 
         
@@ -361,7 +361,7 @@ background: url('images/arrow-right-orange.png') no-repeat left center;
     header{height:65px;}
     header .head-logo{top:14px; left:0;}
     header .head-logo a { height:41px; width:181px; margin:0 auto;}
-        header .head-logo.defaultLogo a { background: url(/css/images/ww-logo-small-phone.png) no-repeat top left; height:41px; width:305px; background-size:79%;}
+        header .head-logo.defaultLogo a { background: url(https://wageworks.com/css/images/ww-logo-small-phone.png) no-repeat top left; height:41px; width:305px; background-size:79%;}
     header .head-logo.mini-head{}
     header .head-logo .mini-head-container{width:330px; margin:0 auto;}
     header .head-logo .mini-head-container a.main-logo{margin:0; float:left;}
@@ -383,7 +383,7 @@ background: url('images/arrow-right-orange.png') no-repeat left center;
     .home-slider-buttons {text-align: center; top: 320px; right:45px;}
     .home-slider-buttons a{width: 115px; padding-top: 8px; float: none; display: inline-block; line-height: 20px;}
     .home-slider-buttons a:last-child{margin-right:0;}
-    .home-slider-logo{ background:url(/css/images/yay_tablet.png) no-repeat top center; height:99px; width:430px; right:20px; top:70px;}
+    .home-slider-logo{ background:url(https://wageworks.com/css/images/yay_tablet.png) no-repeat top center; height:99px; width:430px; right:20px; top:70px;}
     
   
     footer{position:relative;}
@@ -402,10 +402,10 @@ background: url('images/arrow-right-orange.png') no-repeat left center;
   footer nav .fluid ul .fluid.last{padding-bottom:14px;}
   footer .footer .fluid.foot-logo{padding-top:0;}
   footer .footer .social-icon{width: 17px; height: 17px; display: block; padding-right: 4px;}
-  footer .footer .fb-icon {background: url(images/footer_FB.png) no-repeat left top;}
-  footer .footer .twitter-icon {background: url(images/footeR_twitter.png) no-repeat left top; }
-  footer .footer .linkedin-icon {background: url(images/footer_linkedin.png) no-repeat left top; }
-  footer .footer .rss-icon {background: url(images/footer_rss.png) no-repeat left top;}
+  footer .footer .fb-icon {background: url(https://wageworks.com/images/footer_FB.png) no-repeat left top;}
+  footer .footer .twitter-icon {background: url(https://wageworks.com/images/footeR_twitter.png) no-repeat left top; }
+  footer .footer .linkedin-icon {background: url(https://wageworks.com/images/footer_linkedin.png) no-repeat left top; }
+  footer .footer .rss-icon {background: url(https://wageworks.com/images/footer_rss.png) no-repeat left top;}
   footer .copyright {padding:100px 0 10px 0; text-align:center;}
   footer .copyright.mini-footer{padding-top:10px;}
   footer .copyright ul{ float:left; width:100%;}
@@ -459,8 +459,8 @@ background: url('images/arrow-right-orange.png') no-repeat left center;
   
   header{height:55px;}
   header .head-logo{top:12px;}
-  header .head-logo a{background:url(/css/images/logo-phone.png) no-repeat top left; height:35px; width:153px;}
-  header .head-logo.defaultLogo a { background: url(/css/images/ww-logo-small-phone.png) no-repeat top left; height:41px; width:189px; background-size:100%;}
+  header .head-logo a{background:url(https://wageworks.com/css/images/logo-phone.png) no-repeat top left; height:35px; width:153px;}
+  header .head-logo.defaultLogo a { background: url(https://wageworks.com/css/images/ww-logo-small-phone.png) no-repeat top left; height:41px; width:189px; background-size:100%;}
   
   header .head-logo .mini-head-container{}
   header .head-logo .mini-head-container a.main-logo{margin:0 auto; float:none;}
@@ -468,7 +468,7 @@ background: url('images/arrow-right-orange.png') no-repeat left center;
   header .head-logo .mini-head-container a.mini-logo{margin:0; width:30%; height:46px; float:right; position:absolute; right:5px; left:auto; top:-8px; background-position:center right;}
  
   
-  footer nav .footer-logo{background:url(/css/images/logo-footer-phone.png) no-repeat top left; margin:0 auto; width:151px; height:72px;}
+  footer nav .footer-logo{background:url(https://wageworks.com/css/images/logo-footer-phone.png) no-repeat top left; margin:0 auto; width:151px; height:72px;}
   footer nav .foot-logo .first-wrapper{width:70%; margin:0 auto;}
   footer nav .spanfoot-ico ul{padding-left:0;}
   footer nav .fluid.spanfoot{width:50%; padding:20px 0}
@@ -478,14 +478,14 @@ background: url('images/arrow-right-orange.png') no-repeat left center;
   footer .footer .social-icon{position:static; background-position:center center; width:100%; padding:10px 0;}  
   footer .copyright .right-desktop li{border-left:0 none;}
   
-  footer .footer .fb-icon {background-image: url(images/icon_facebook.png);}
-  footer .footer .twitter-icon, footer .footer .twitter-icon2 {background-image: url(images/icon_twitter.png);}
-  footer .footer .linkedin-icon {background-image: url(images/icon_linkedin.png);}
-  footer .footer .rss-icon {background-image: url(images/icon_rss.png);}
+  footer .footer .fb-icon {background-image: url(https://wageworks.com/images/icon_facebook.png);}
+  footer .footer .twitter-icon, footer .footer .twitter-icon2 {background-image: url(https://wageworks.com/images/icon_twitter.png);}
+  footer .footer .linkedin-icon {background-image: url(https://wageworks.com/images/icon_linkedin.png);}
+  footer .footer .rss-icon {background-image: url(https://wageworks.com/images/icon_rss.png);}
   
   #home-banner, #home-slider{height:620px;}
   #home-slider .slide{height:370px; background-position:top center;}
-  .home-slider-logo{width:240px; right:20px; background:url(/css/images/yay_mobile.png) no-repeat top center; height:69px; }
+  .home-slider-logo{width:240px; right:20px; background:url(https://wageworks.com/css/images/yay_mobile.png) no-repeat top center; height:69px; }
   .home-slider-buttons{width:100%; right:0; top:425px;}
   .home-slider-buttons a div{display:none;}
   .home-slider-buttons a{width:95%; margin:0 0 10px 0; font-size: 18px; line-height: 40px;}
