@@ -270,12 +270,12 @@ h4 {
   position: relative;
 }
 .brak-font1, .brak-font2 {
-  font-family: 'Open Sans', 'Abel', DinNextCondensed;
+  font-family: 'Raleway', 'Open Sans', 'Abel', DinNextCondensed;
   font-size: 100px;
   color: #F1801F;
   position: absolute;
   top: 18px;
-  font-weight: 100;
+  font-weight: 200;
 }
 .brak-font1 {
   left: -35px;
