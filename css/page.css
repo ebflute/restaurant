@@ -459,64 +459,6 @@ table#assets {
   width: 98%;
   margin: 0 1%;
 }
-#viewport {
-  position: relative;
-  background: #fff;
-  z-index: 40;
-}
-#viewport.menuright {
-  border-left: 1px solid #d1cdcc;
-  -webkit-transform: translateX(-240px);
-  -moz-transform: translateX(-240px);
-  -ms-transform: translateX(-240px);
-  -o-transform: translateX(-240px);
-  transform: translateX(-240px);
-}
-#viewport.menuleft {
-  border-right: 1px solid #d1cdcc;
-  -webkit-transform: translateX(240px);
-  -moz-transform: translateX(240px);
-  -ms-transform: translateX(240px);
-  -o-transform: translateX(240px);
-  transform: translateX(240px);
-}
-header {
-  height: 65px;
-}
-header .head-logo {
-  top: 14px;
-  left: 0;
-}
-header .head-logo a {
-  height: 41px;
-  width: 181px;
-  margin: 0 auto;
-}
-header .head-logo.defaultLogo a {
-  background: url(https://wageworks.com/css/images/ww-logo-small-phone.png) no-repeat top left;
-  height: 41px;
-  width: 305px;
-  background-size: 79%;
-}
-header .head-logo.mini-head {
-}
-header .head-logo .mini-head-container {
-  width: 330px;
-  margin: 0 auto;
-}
-header .head-logo .mini-head-container a.main-logo {
-  margin: 0;
-  float: left;
-}
-header .head-logo .mini-head-container a.mini-logo {
-  margin: 0;
-  width: 140px;
-  height: 60px;
-  float: right;
-  position: relative;
-  top: -10px;
-  left: 0;
-}
 #home-slider {
   width: 100%;
   position: absolute;
