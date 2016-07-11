@@ -150,6 +150,7 @@ h4 {
     .responstable th:nth-child(2):after {
       display: none;
     }
+   
 }
 .responstable td {
   display: block;
@@ -865,4 +866,6 @@ table#assets {
         background-image: url(http://wageworks.com/css/images/logo_footer_phone_2x.png);
         background-size: 151px 71px;
       }
+
+  }
 }
