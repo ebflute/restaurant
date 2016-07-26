@@ -1,0 +1,38 @@
+a { color:#ff2c10; }
+	a:hover { text-decoration:underline; }
+
+.staticHeader { background-color: white; height: 113px; }
+a.staticLogo { display: block; padding: 24px; float: left; }
+.titleStrip { height: 46px; background-image: url(/images/NYClanding/topBar.jpg); background-repeat: repeat-x; }
+	.titleStrip h1 { height: 46px; font-size: 1.5em; font-weight:300; color: #030404; text-transform: uppercase; display: block; width: 438px; margin: auto; background-image: url(/images/NYClanding/topBar_noLines.jpg); background-repeat: repeat-x; box-sizing: border-box; padding: 12px; text-align: center; text-shadow: 1px 1px 1px white;}
+.marquee { height: 383px; /*background-image: url(/images/NYClanding/marqueeBG.jpg);*/ background-repeat: no-repeat; position:relative; margin-top:2px;}
+	.marquee h1 { position: absolute; color: white; text-transform: uppercase; }
+		.marquee h1.save { left: 78px; top: 143px; font-size: 7.5em; font-weight: 500; }
+		.marquee h1.with { left: 598px; top: 204px; font-size: 3em; font-weight: 300; }
+		.marquee h1.benefits { left: 148px; top: 283px; font-size: 5.4em; font-weight: 500; }
+.staticContent { position: relative; background-image:url(/images/NYCLanding/greybars.jpg); background-repeat:repeat-x; background-position:left 787px; }
+
+.orangeArrow {background-image: url(/images/NYClanding/orangeArrow.png); width:83px; height:84px; position:absolute; top:-20px; left:-45px; }
+.staticLeft { float: left; z-index: 1; background: white; font-size: 1.1em; box-sizing: border-box; box-shadow: 0px 0px 10px #5d5d5d; width: 753px; padding: 33px 33px 80px 33px; margin-left: 120px; position: relative; border-radius: 0px 0px 20px 20px; font-family: DinNext, Arial, Helvetica, Sans-Serif; font-weight: 300; font-size: 18px; line-height: 20px; }
+	.staticLeft p { padding: 0px 20px; margin-bottom:25px; }
+.staticRight {float:left; box-sizing: border-box; width:300px; margin-left:25px;}
+	.staticRight img { max-width: 100%; }
+
+.sidebarImg { margin: 20px 0px; }
+	.sidebarImg img { border-radius: 12px 0px; }
+
+
+.footer { height: 85px; background-color: black; color: white; }
+.copyright { float: left; margin-left: 30px; margin-top: 41px;}
+.footerLogo { float: right; margin-right: 30px; margin-top: 27px; }
+.footerBottom { background-image: url(/images/NYClanding/orangeStripes.jpg); background-repeat: repeat-x; height:27px;}
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
