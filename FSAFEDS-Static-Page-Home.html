@@ -1862,10 +1862,7 @@ button {
     height: auto;
 }
 
-.ww-navigation--toggle-target {
-    position: absolute;
-    left: -40000px
-}
+
 
 .ww-logo {
     display: inline-block;
@@ -2007,19 +2004,20 @@ button {
 }
 
 /* //Custom css for landing page standalone. Do not remove. // */
-.ww-body {
-    background-color: #eee;
+body {
+    background: #dfdedb;
     padding-left: 0;
-    padding-right: 0
+    padding-right: 0;
 }
 
 .ww-container {
     padding: 0 15px;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
 }
 
 .container-round {
+    overflow:hidden;
     background:#f6f6f6;
     border:1px solid #555;
     margin-top:60px;
@@ -2028,7 +2026,7 @@ button {
     -webkit-border-radius: 12px;
     -moz-border-radius: 12px;
     border-radius: 12px;
-    max-width:1200px;
+    width:100%;
 
 }
 
@@ -2042,40 +2040,107 @@ button {
     max-height:auto;
 }
 
-.coming-soon {
-    position:relative;
-    left:15px;
-    width:100%;
-    margin:0px 0 60px 0;
-    padding:0;
-    
-}
+
 
 .ww-contact {
     padding-top: 12px;
     padding-left: 44px;
     padding-bottom:20px;
 }
-.coming-soon-logo {margin-top:40px;margin-bottom:36px;}
+.coming-soon-logo {
+    display:inline-block;
+    max-width:100%;
+    height:auto !important;
+}
+.coming-soon-banner {
+
+    margin:0;
+    padding:0;
+    width:100%;
+
+}
+
+
+
+.cs-margin {
+   margin:2em 0 1.8em 4.2em;
+}
+
+.ww-contact {margin-top:20px;}
+
+.footer-icons  {
+    float:left;
+    margin-left:0;
+    margin-right:20px;
+    height:45px;
+    width:auto;
+}
+
+img.ww-opm-seal {
+    display:block;
+    float: left;
+    height: 122px;
+    width: 122px;
+    max-width: 100%;
+    margin: 18px 36px 15px 12px;
+    color: #5c5c5d;
+}
+
+@media all and (max-width:1076px){
+
+    .ww-footer-logo-set p {
+        display:block;
+        margin:0 auto;
+        width:100%;
+        float:none;
+        padding-bottom:20px;
+    }
+    img.ww-opm-seal {
+    display:block;
+    float: none;
+    width: 122px;
+    height: auto;
+      
+    }
+    .ww-contact {
+        padding-left:10px;
+    }
+    p.social {float:right;}
+}
+
+@media all and (max-width:560px) {
+
+    .cs-margin {
+        margin:2em;
+    }
+    .coming-soon-logo {
+        width:50%;
+        height:auto;   
+    }
+    
+}
+
 
 </style>
 </head>
 <body>
 <div class="ww-body-wrapper container-round">
 <div class="row ">
-     <div class="col-xs-offset-1 col-xs-10 col-md-10">
+     <div class="col-xs-10 col-md-10 cs-margin">
             <img src="images/FSAFEDS-LOGO.png" class="coming-soon-logo" />
-    </div></div>
+    </div>
+</div>
 <div class="row ">
-    <div class="col-xs-12 col-md-12 coming-soon">
-            <img src="images/fsafeds-coming-soon-banner.png" class="stretch-width" />
-    </div></div>
+    <div class="col-xs-12 col-md-12">
+            <img src="images/fsafeds-coming-soon-banner.png" class="coming-soon-banner" />
+    </div>
+</div>
 <div class="row">
-    <div class="col-xs-offset-1 col-xs-10 col-md-10">
+    <div class="col-xs-10 col-md-10 cs-margin">
             <p><strong>We’re looking forward to sharing the new FSAFEDS website, launching at 9 a.m. Eastern Time on Thursday, September 1, 2016.</strong></p>
             <p>The website has been completely refreshed – making it simple to find the information you need. And when you log in to your account for the first time on or after September 1, you’ll find all new tools and resources that make it easier than ever to manage your account.</p>
             <p>As a reminder, you may resume submitting claims at 9 a.m. Eastern Time on September 1, 2016. Processing of Paperless Reimbursement (PR) claims and pending dependent care claims will resume on Thursday, September 8, 2016.</p>
-            <p>If you receive FSAFEDS emails at a personal email address, please be sure to add <a href="">wageworks.com</a> to your safe senders list. This will help ensure you continue to receive emails about the FSAFEDS program.</p><p>&nbsp;</p>
+            <p>If you receive FSAFEDS emails at a personal email address, please be sure to add <a href="">wageworks.com</a> to your safe senders list. This will help ensure you continue to receive emails about the FSAFEDS program.</p>
     </div>
 </div>
  <footer class="ww-footer ">
@@ -2090,11 +2155,9 @@ button {
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-7">
-                <div class="ww-footer-logo-set">
-                    
-                    <p>
-                        The Federal Flexible Spending Account Program (FSAFEDS) is sponsored by the U.S. Office of Personnel
-                        Management and administered by WageWorks, Inc.
+                <div class="ww-footer-logo-set"><img class="logo logo-opm ww-opm-seal" src="images/feds-seal-circle.png" />
+                   <p>The Federal Flexible Spending Account Program (FSAFEDS) is sponsored by the U.S. Office of Personnel
+                    Management and administered by WageWorks, Inc.
                     </p>
                 </div>
             </div>
@@ -2108,8 +2171,8 @@ button {
             </div>
             <div class="col-xs-6 col-sm-2">
                 <p class="ww-social">
-                    <a href="https://facebook.com/fsafeds" title="Like us on Facebook" style="font-size:12px">icon</a>
-                    <a href="https://twitter.com/fsafeds" title="Follow us on Twitter" style="font-size:12px">icon</a>
+                    <a href="https://facebook.com/fsafeds" title="Like us on Facebook" style="font-size:12px" ><img src="images/facebook-icon.png" class="footer-icons" /></a>
+                    <a href="https://twitter.com/fsafeds" title="Follow us on Twitter" style="font-size:12px"><img src="images/twitter-icon.png" class="footer-icons" /></a>
                 </p>
             </div>
         </div>
