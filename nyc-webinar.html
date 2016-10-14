@@ -5,7 +5,6 @@
  <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,user-scalable=no,width=device-width">
 
     <link rel="Stylesheet" type="text/css" href="https://www.wageworks.com/css/main.css">
-    <link rel="Stylesheet" type="text/css" href="https://www.wageworks.com/css/staticlanding.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.wageworks.com/wageworks.com/favicon.ico">
     <link rel="icon" href="https://www.wageworks.com/wageworks.com/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
@@ -19,6 +18,40 @@
             margin: 0;
             padding: 0;
         }
+
+        a { color:#ff2c10; }
+    a:hover { text-decoration:underline; }
+
+.staticHeader { background-color: white; height: 113px; }
+a.staticLogo { display: block; padding: 24px; float: left; }
+.titleStrip { height: 46px; background-image: url(https://wageworks.com/images/NYClanding/topBar.jpg); background-repeat: repeat-x; }
+    .titleStrip h1 { height: 46px; font-size: 1.5em; font-weight:300; color: #030404; text-transform: uppercase; display: block; width: 438px; margin: auto; background-image: url(https://wageworks.com/images/NYClanding/topBar_noLines.jpg); background-repeat: repeat-x; box-sizing: border-box; padding: 12px; text-align: center; text-shadow: 1px 1px 1px white;}
+.marquee { height: 383px; /*background-image: url(/images/NYClanding/marqueeBG.jpg);*/ background-repeat: no-repeat; position:relative; margin-top:2px;}
+    .marquee h1 { position: absolute; color: white; text-transform: uppercase; }
+        .marquee h1.save { font-family: Abel, Arial, sans-serif; left: 78px; top: 43px; font-size: 7.5em; font-weight: 500; }
+        .marquee h1.with { font-family: Abel, Arial, sans-serif;left: 598px; top: 164px; font-size: 3em; font-weight: 300; }
+        .marquee h1.benefits { font-family: Abel, Arial, sans-serif;left: 148px; top: 213px; font-size: 5.4em; font-weight: 500; }
+.staticContent { position: relative; background-image:url(https://wageworks.com/images/NYCLanding/greybars.jpg); background-repeat:repeat-x; background-position:left 787px; }
+span.illumination { font-weight: 500; font-size: 1.8em; }
+.orangeArrow {background-image: url(https://wageworks.com/images/NYClanding/orangeArrow.png); width:83px; height:84px; position:absolute; top:40px; left:-45px; }
+.staticLeft { float: left; z-index: 1; background: white; font-size: 1.1em; box-sizing: border-box; box-shadow: 0px 0px 10px #5d5d5d; width: 753px; padding: 33px 33px 80px 33px; margin-left: 120px; position: relative; border-radius: 0px 0px 20px 20px; font-family: DinNext, Arial, Helvetica, Sans-Serif; font-weight: 300; font-size: 18px; line-height: 20px; }
+    .staticLeft p { padding: 0px 20px; margin-bottom:25px; }
+.staticRight {float:left; box-sizing: border-box; width:300px; margin-left:25px;}
+    .staticRight img { max-width: 100%; }
+a.learnMore { margin-left: 20px; font-size: 1.3em; text-decoration: underline; font-weight:500; }
+h2.staticSubTitle { color: white; background-color:#496263; text-align: center; font-size: 2em; font-weight: 300; padding: 10px 0px; display: block; border-radius: 12px 0px; margin:45px 0px 20px;}
+ul.dotArrowList { margin: 15px 0px; padding: 0px;}
+    ul.dotArrowList li { background-image: url(https://wageworks.com/images/NYClanding/dotarrow.png); background-repeat:no-repeat; background-position:20px 10px; list-style-type:none; padding:10px 0px 10px 65px; margin:30px 0px;}
+        ul.dotArrowList li span { font-weight: 500; color:black; }
+
+a.bigContactBtn { display: block; width: 669px; height: 95px; /*background-image: url(/images/NYClanding/btn_contact.png);*/ margin-top:30px; }
+.sidebarImg { margin: 20px 0px; }
+    .sidebarImg img { border-radius: 12px 0px; }
+
+.bottomContent { width: 84%; margin: 40px 0px 40px 120px; font-family: DinNext, Arial, Helvetica, Sans-Serif; font-weight: 300; font-size: 18px; line-height: 20px; }
+    .bottomContent p { margin-bottom: 20px; }
+
+
         .elq-form {
 
           position:relative;
@@ -485,6 +518,14 @@
             top: -4px;
         }
 
+        .bottomContent { width: 84%; margin: 40px 0px 40px 120px; font-family: DinNext, Arial, Helvetica, Sans-Serif; font-weight: 300; font-size: 18px; line-height: 20px; }
+    .bottomContent p { margin-bottom: 20px; }
+
+.footer { height: 85px; background-color: black; color: white; clear:both;}
+.copyright { float: left; margin-left: 30px; margin-top: 41px;font-family: DinNext, Abel, Arial, Helvetica, Sans-Serif;}
+.footerLogo { float: right; margin-right: 30px; margin-top: 27px; }
+.footerBottom { background-image: url(http://wageworks.com/images/NYClanding/orangeStripes.jpg); background-repeat: repeat-x; height:27px;}
+
 .titleStrip h1 {background:none;text-align:center; width: 100%;}
 
 @media all and ( min-width: 1188px ) {
@@ -568,14 +609,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', end
             height:160px;
            } 
            body {overflow-x: hidden;}
+           .orangeArrow {display:none;}
+           .staticLeft {
+              
+              padding: 33px 20px 33px 13px;
+              
+              margin-left:0px;
+             
+                  }
 
         }
 
-.orangeArrow {position:absolute;top:6px;left:-49px;}
 .staticContent {
     overflow:hidden;
 }
-
          
     </style>
     <!--[endif] -->
@@ -593,9 +640,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', end
             <a href="/" class="staticLogo"><img src="https://img03.en25.com/EloquaImages/clients/WageWorksInc/{0cec3e52-c34a-46f0-bd40-46c9d0588b30}_MK_WW_COM_6152_20150203_LP_NYCO-logo.png" class=""></a>
         </div>
         <div class="titleStrip">
-            <h1 style="font-family:abel" class="">new york city transit ordinance</h1>
+            <h1 style="font-family:Abel" class="">new york city transit ordinance</h1>
         </div>
-        <div class="marquee" style="background-image:url(http://www.wageworks.com/media/311141/NYCO-header.png)">
+        <div class="marquee" style="background-image:url(http://www.wageworks.com/media/311141/NYCO-header.png);overflow:hidden;">
             <h1 class="save" style="margin-left:-50px">save big</h1>
             <h1 class="with">with</h1>
             <h1 class="benefits">commuter benefits</h1>
@@ -604,7 +651,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', end
         <div class="staticContent">
             <div class="staticLeft">
                 <div class="orangeArrow"></div>
-                <p style="font-size: 175%; font-weight:bold; line-height: 30px; font-family:abel" class=""><strong class="">How to SAVE BIG and Comply with the NYC Transit Ordinance</strong></p>
+                <p style="font-size: 175%; font-weight:bold; line-height: 30px; font-family:Abel" class=""><strong class="">How to SAVE BIG and Comply with the NYC Transit Ordinance</strong></p>
                 <p style="font-family:Abel" class="">
                     In October 2014, New York City passed a law requiring certain employers to offer commuter benefits to their employees. This new law, known as the New York City (NYC) Transit Ordinance, went into effect January 1, 2016. Many companies are unaware of what this means for them or how to comply. Are you with one of these companies?</p>
 
